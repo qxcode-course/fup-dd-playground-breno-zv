@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_17-51-53",
+            "content": "@@ -41,166 +41,28 @@\n     \n-var in1, in2, quociente, resto float64%0A    fmt.Scan(&in1, &in2)%0A%0A    quociente = in1/in2%0A    resto =  in1%25in2%0A%0A    fmt.Printf(%22%25.2f, %25.2f%5Cn%22, quociente, resto\n+fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-16_18-08-06",
+            "content": "@@ -68,18 +68,20 @@\n , resto \n-in\n+floa\n t64%0A    \n@@ -165,11 +165,26 @@\n rint\n-ln(\n+f(%22%25.2f, %25.2f%5Cn%22, \n quoc\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_18-10-02",
+            "content": "@@ -1,10 +1,8 @@\n-%0A%0A\n package \n@@ -16,34 +16,15 @@\n port\n-(%0A   \n  %22fmt%22%0A\n-    %22math%22%0A)%0A%0A\n func\n@@ -72,12 +72,10 @@\n sto \n-floa\n+in\n t64%0A\n@@ -123,11 +123,9 @@\n  in1\n- / \n+/\n in2%0A\n@@ -140,26 +140,16 @@\n o = \n-math.Mod(in1, \n+ in1%25\n in2\n-)\n %0A%0A  \n@@ -163,26 +163,11 @@\n rint\n-f(%22%25.2f, %25.2f%5Cn%22, \n+ln(\n quoc\n@@ -181,8 +181,9 @@\n resto)%0A%7D\n+%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_18-12-59",
+            "content": "@@ -1,8 +1,10 @@\n+%0A%0A\n package \n@@ -18,15 +18,34 @@\n port\n+(%0A   \n  %22fmt%22%0A\n+    %22math%22%0A)%0A%0A\n func\n@@ -146,9 +146,11 @@\n  in1\n-/\n+ / \n in2%0A\n@@ -165,16 +165,26 @@\n o = \n- in1%25\n+math.Mod(in1, \n in2\n+)\n %0A%0A  \n@@ -234,6 +234,5 @@\n to)%0A\n+\n %7D\n-%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-16_18-14-37",
+            "content": "@@ -34,10 +34,15 @@\n in()\n+ \n %7B%0A\n+    \n var \n@@ -72,15 +72,20 @@\n sto \n-int64%0A%0A\n+float64%0A    \n fmt.\n@@ -102,16 +102,20 @@\n  &in2)%0A%0A\n+    \n quocient\n@@ -125,34 +125,39 @@\n  in1\n- / \n+/\n in2%0A\n+    \n resto =\n+ \n  in1\n- %25 \n+%25\n in2%0A%0A\n+    \n fmt.\n@@ -169,12 +169,17 @@\n f(%22%25\n-d %25d\n+.2f, %25.2f\n %5Cn%22,\n@@ -201,6 +201,6 @@\n to)%0A\n-%0A\n %7D\n+%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_17-07-38",
+            "content": "package main\nimport \"fmt\"\nfunc main(){\nvar in1, in2, quociente, resto int64\n\nfmt.Scan(&in1, &in2)\n\nquociente = in1 / in2\nresto = in1 % in2\n\nfmt.Printf(\"%d %d\\n\", quociente, resto)\n\n}",
+            "lines": "13"
+        }
+    ]
+}

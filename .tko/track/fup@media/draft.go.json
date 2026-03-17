@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_17-31-42",
+            "content": "@@ -134,16 +134,13 @@\n tln(\n-%25\n media\n-.1\n )%0A%0A%7D\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_17-32-21",
+            "content": "@@ -61,15 +61,13 @@\n dia \n-float32\n+int64\n %0A   \n@@ -134,14 +134,14 @@\n tln(\n+%25\n media\n-%25\n .1)%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_17-33-16",
+            "content": "@@ -137,13 +137,16 @@\n ln(media\n+%25.1\n )%0A%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_17-33-22",
+            "content": "@@ -136,21 +136,14 @@\n tln(\n-%22%25.1f%22, \n media)%0A\n+%0A\n %7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_17-41-16",
+            "content": "@@ -138,11 +138,11 @@\n n(%22%25\n-f\n .1\n+f\n %22, m\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-16_17-41-28",
+            "content": "@@ -140,17 +140,16 @@\n %22%25f.1%22, \n-&\n media)%0A%7D\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-16_17-41-42",
+            "content": "@@ -138,14 +138,15 @@\n n(%22%25\n+f\n .1\n-f\n %22, \n+&\n medi\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-16_17-42-15",
+            "content": "@@ -132,16 +132,24 @@\n Println(\n+%22%25.1f%22, \n media)%0A%7D\n@@ -149,10 +149,8 @@\n edia)%0A%7D%0A\n-%0A%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-16_17-44-05",
+            "content": "@@ -136,16 +136,8 @@\n tln(\n-%22%25.1f%22, \n medi\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_17-44-58",
+            "content": "@@ -129,17 +129,18 @@\n mt.Print\n-f\n+ln\n (%22%25.1f%22,\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_17-45-08",
+            "content": "@@ -140,10 +140,8 @@\n %25.1f\n-%5Cn\n %22, m\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_17-45-25",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var in1, in2, media float32\n    fmt.Scan(&in1, &in2)\n\n    media = (in1+in2)/2\n\n    fmt.Printf(\"%.1f\\n\", media)\n}\n\n\n",
+            "lines": "12"
+        }
+    ]
+}

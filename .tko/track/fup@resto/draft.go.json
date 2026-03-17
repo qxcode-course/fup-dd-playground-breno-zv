@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_16-51-40",
+            "content": "@@ -37,86 +37,8 @@\n ) %7B%0A\n-    var in1, in2, resto int64%0A    fmt.Scan(&in1, &in2,)%0A    resto = in1%25in2%0A%0A%0A\n     \n@@ -53,14 +53,16 @@\n tln(\n-resto)%0A\n+%22qxcode%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-16_16-53-12",
+            "content": "@@ -60,16 +60,8 @@\n esto\n-, result\n  int\n@@ -92,30 +92,8 @@\n n2,)\n-%0A%0A    result = in1/in2\n %0A   \n@@ -131,16 +131,8 @@\n tln(\n-result, \n rest\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_16-53-56",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var in1, in2, resto, result int64\n    fmt.Scan(&in1, &in2,)\n\n    result = in1/in2\n    resto = in1%in2\n\n\n    fmt.Println(result, resto)\n\n}\n",
+            "lines": "13"
+        }
+    ]
+}

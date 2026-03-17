@@ -1,0 +1,32 @@
+version: '0.2'
+sources:
+- name: sandbox
+  target: sandbox
+  type: local
+  writeable: true
+  quests: null
+  tasks: null
+- name: fup
+  target: https://github.com/qxcodefup/arcade.git
+  type: git
+  writeable: false
+  quests: null
+  tasks: null
+expanded:
+- fup@missão-operações
+- fup@campanha-principal
+- sandbox@student_sandbox_alias
+- sandbox@student_sandbox_alias:00_rascunhos
+tasks:
+  fup@tres: '{self:1, rate:100, study:3, friend:Fiz sozinho, guided:1}'
+  fup@resto: '{self:1, study:4, friend:nao, guided:1}'
+  fup@media: '{self:1, study:15, friend:nao, guided:1}'
+flags:
+  painel: 1
+  quests: 2
+  tracks: 2
+  tasks: 0
+  task_graph_mode: 0
+  show_time: 0
+lang: go
+selected: fup@sobrou

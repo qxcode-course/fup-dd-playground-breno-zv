@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-10_16-53-52",
+            "content": "@@ -37,123 +37,8 @@\n ) %7B%0A\n-    var in1, in2, in3, soma int64%0A    fmt.Scan(&in1)%0A    fmt.Scan(&in2)%0A    fmt.Scan(&in3)%0A    soma = in1+in2+in3%0A%0A\n     \n@@ -53,13 +53,16 @@\n tln(\n-soma)%0A\n+%22qxcode%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-10_18-16-06",
+            "content": "@@ -88,16 +88,42 @@\n &in1\n-, &in2, \n+)%0A    fmt.Scan(&in2)%0A    fmt.Scan(\n &in3\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-10_18-17-03",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var in1, in2, in3, soma int64\n    fmt.Scan(&in1, &in2, &in3)\n    soma = in1+in2+in3\n\n    fmt.Println(soma)\n\n}\n",
+            "lines": "10"
+        }
+    ]
+}
