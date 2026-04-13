@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_18-12-26",
+            "content": "@@ -41,101 +41,35 @@\n     \n-var v1, v2, abs int64%0A    fmt.Scan(&v1, &v2)%0A    abs = (v1+v2)*(-1)%0A%0A    fmt.Printf(%22%25d%22, abs\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-07_16-48-34",
+            "content": "@@ -99,16 +99,21 @@\n  (v1+v2)\n+*(-1)\n %0A%0A    fm\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-07_16-48-49",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var v1, v2, abs int64\n    fmt.Scan(&v1, &v2)\n    abs = (v1+v2)\n\n    fmt.Printf(\"%d\", abs)\n}\n",
+            "lines": "9"
+        }
+    ]
+}

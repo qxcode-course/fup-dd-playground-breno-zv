@@ -2,31 +2,50 @@ version: '0.2'
 sources:
 - name: sandbox
   target: sandbox
+  index: README.md
   type: local
   writeable: true
   quests: null
   tasks: null
 - name: fup
   target: https://github.com/qxcodefup/arcade.git
+  index: README.md
+  type: git
+  writeable: false
+  quests: null
+  tasks: null
+- name: eval1
+  target: https://github.com/senapk/fup_26_1_eval_1.git
+  index: README.md
   type: git
   writeable: false
   quests: null
   tasks: null
 expanded:
-- fup@missão-operações
-- fup@campanha-principal
-- sandbox@student_sandbox_alias
-- sandbox@student_sandbox_alias:00_rascunhos
-tasks:
-  fup@tres: '{self:1, rate:100, study:3, friend:Fiz sozinho, guided:1}'
-  fup@resto: '{self:1, study:4, friend:nao, guided:1}'
-  fup@media: '{self:1, study:15, friend:nao, guided:1}'
+- fup@dict
+- fup@base
+- fup@rec
+- fup@for1
+- fup@if_extra
+- fup@if1
+- fup@str2
+- fup@if2
+- fup@list_extra
+- eval1@teste-1
+- fup@str_extra
+- fup@list1
+- fup@games
+- fup@list2
+- fup@mat
+- fup@for_extra
+- fup@for2
+- fup@str1
+- fup@struct
 flags:
-  painel: 1
-  quests: 2
-  tracks: 2
-  tasks: 0
-  task_graph_mode: 0
-  show_time: 0
+  inbox: all
+  panel: help
+  show_panel: 'true'
+  task_graph_mode: executions
+  show_time: 'true'
 lang: go
-selected: fup@sobrou
+selected: eval1@ceu

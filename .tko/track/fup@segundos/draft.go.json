@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_16-47-33",
+            "content": "@@ -41,129 +41,35 @@\n     \n-var h, m, s, seg int64%0A    fmt.Scan(&seg)%0A    h = seg/3600%0A    m = h/60%0A    s = m/60%0A%0A%0A    fmt.Printf(%22%25d:%25d:%25d%22, h, m, s\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-30_16-54-48",
+            "content": "@@ -121,10 +121,10 @@\n s = \n-h%25\n+m/\n 60%0A%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_16-56-36",
+            "content": "@@ -105,17 +105,17 @@\n    m = h\n-%25\n+/\n 60%0A    s\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_16-56-59",
+            "content": "@@ -105,17 +105,17 @@\n    m = h\n-/\n+%25\n 60%0A    s\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_16-57-05",
+            "content": "@@ -108,18 +108,9 @@\n m = \n-(seg%253600)\n+h\n /60%0A\n@@ -117,19 +117,17 @@\n     s = \n-seg\n+h\n %2560%0A%0A%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_16-59-06",
+            "content": "@@ -163,10 +163,8 @@\n d:%25d\n-%5Cn\n %22, h\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_16-59-19",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var h, m, s, seg int64\n    fmt.Scan(&seg)\n    h = seg/3600\n    m = (seg%3600)/60\n    s = seg%60\n\n\n    fmt.Printf(\"%d:%d:%d\\n\", h, m, s)\n}\n",
+            "lines": "12"
+        }
+    ]
+}

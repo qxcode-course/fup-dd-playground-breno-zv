@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_17-03-02",
+            "content": "@@ -41,112 +41,35 @@\n     \n-var cel, fah, calc float64%0A    fmt.Scan(&cel)%0A    calc = cel/5 * (fah-32)/9%0A    fmt.Println(%22%25.6f%22, calc\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-30_17-12-42",
+            "content": "@@ -126,17 +126,18 @@\n mt.Print\n-f\n+ln\n (%22%25.6f%22,\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-30_17-12-52",
+            "content": "@@ -49,16 +49,22 @@\n cel, fah\n+, calc\n  float64\n@@ -92,14 +92,22 @@\n    c\n-el = (\n+alc = cel/5 * \n (fah\n@@ -116,11 +116,8 @@\n 2)/9\n-)/5\n %0A   \n@@ -137,14 +137,15 @@\n %25.6f%22, c\n-el\n+alc\n )%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-30_17-15-09",
+            "content": "@@ -49,22 +49,16 @@\n cel, fah\n-, calc\n  float64\n@@ -91,12 +91,9 @@\n l = \n-5 * \n+(\n (fah\n@@ -98,16 +98,19 @@\n ah-32)/9\n+)/5\n %0A    fmt\n@@ -130,11 +130,10 @@\n %22, c\n-alc\n+el\n )%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-30_17-17-46",
+            "content": "@@ -92,16 +92,20 @@\n    cel =\n+ 5 *\n  (fah-32\n@@ -111,12 +111,8 @@\n 2)/9\n- * 5\n %0A   \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-30_17-18-17",
+            "content": "@@ -103,16 +103,20 @@\n ah-32)/9\n+ * 5\n %0A    fmt\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-30_17-18-45",
+            "content": "@@ -107,11 +107,8 @@\n 2)/9\n- *5\n %0A   \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-30_17-18-53",
+            "content": "@@ -49,16 +49,22 @@\n cel, fah\n+, calc\n  float64\n@@ -91,26 +91,27 @@\n     \n-fah\n+cel\n  = (\n-cel*1.8)+32\n+fah-32)/9 *5\n %0A   \n@@ -130,15 +130,16 @@\n %22%25.6f%22, \n-fah\n+calc\n )%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-30_17-21-43",
+            "content": "@@ -124,10 +124,8 @@\n %25.6f\n-%5Cn\n %22, f\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-30_17-21-51",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var cel, fah float64\n    fmt.Scan(&cel)\n    fah = (cel*1.8)+32\n    fmt.Printf(\"%.6f\\n\", fah)\n}\n",
+            "lines": "8"
+        }
+    ]
+}

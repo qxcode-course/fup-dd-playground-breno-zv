@@ -1,0 +1,119 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-35-53",
+            "content": "@@ -41,232 +41,35 @@\n     \n-var m, a, b int64%0A    %0A    fmt.Scan(&m)%0A    fmt.Scan(&a)%0A    fmt.Scan(&b)%0A%0A    if a%3Cb && a!=b && a%3Cm && m%3C110 && m%3E40%7B%0A        fmt.Println(m-a)%0A    %7Delse if b%3Ca && b!=a && a%3Cm && m%3C110 && m%3E40%7B%0A        fmt.Println(m-b)%0A    %7D%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-13_17-44-07",
+            "content": "@@ -209,17 +209,17 @@\n b!=a && \n-b\n+a\n %3Cm && m%3C\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-13_17-44-46",
+            "content": "@@ -52,32 +52,15 @@\n a, b\n-, c, form1, form2\n  int64%0A\n+\n     \n@@ -118,16 +118,23 @@\n %0A%0A    if\n+ a%3Cb &&\n  a!=b &&\n@@ -138,12 +138,11 @@\n  && \n-m%3E40\n+a%3Cm\n  && \n@@ -146,16 +146,24 @@\n && m%3C110\n+ && m%3E40\n %7B%0A      \n@@ -169,63 +169,104 @@\n    f\n-orm1 = a+b%0A        form2 = form1 - m%0A        c = form2%0A%7D\n+mt.Println(m-a)%0A    %7Delse if b%3Ca && b!=a && b%3Cm && m%3C110 && m%3E40%7B%0A        fmt.Println(m-b)%0A    %7D%0A\n %0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-13_17-49-59",
+            "content": "@@ -227,44 +227,8 @@\n rm2%0A\n-        %0A        fmt.Println(c)%0A    \n %7D%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_17-50-39",
+            "content": "@@ -252,16 +252,17 @@\n Println(\n+c\n )%0A    %7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-13_17-51-14",
+            "content": "@@ -198,18 +198,18 @@\n m2 =\n- m -\n  form1\n+ - m\n %0A   \n@@ -252,17 +252,16 @@\n Println(\n-c\n )%0A    %7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-13_17-51-26",
+            "content": "@@ -196,16 +196,24 @@\n orm2 = m\n+ - form1\n %0A       \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-13_17-51-47",
+            "content": "@@ -198,16 +198,8 @@\n m2 =\n- form1 -\n  m%0A \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-13_17-52-08",
+            "content": "@@ -208,13 +208,8 @@\n  - m\n-*(-1)\n %0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-13_17-52-23",
+            "content": "@@ -195,17 +195,16 @@\n form2 = \n-(\n form1 - \n@@ -204,17 +204,16 @@\n orm1 - m\n-)\n *(-1)%0A  \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-13_17-52-52",
+            "content": "@@ -69,15 +69,8 @@\n orm2\n-, maior\n  int\n@@ -139,36 +139,8 @@\n   if\n- a%3E1 && a%3Cm && b%3E1 && b%3Cm &&\n  a!=\n@@ -195,16 +195,17 @@\n form2 = \n+(\n form1 - \n@@ -205,16 +205,22 @@\n orm1 - m\n+)*(-1)\n %0A       \n@@ -251,171 +251,22 @@\n     \n-if a%3Eb && a%3Ec%7B%0A            fmt.Println(a)%0A        %7Delse if b%3Ea && b%3Ec%7B%0A            fmt.Println(b)%0A        %7Delse if c%3Ea && c%3Eb%7B%0A            fmt.Println(c)%0A        %7D\n+fmt.Println(c)\n %0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-13_17-59-35",
+            "content": "@@ -65,16 +65,23 @@\n 1, form2\n+, maior\n  int64%0A \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-13_17-59-44",
+            "content": "@@ -51,16 +51,30 @@\n  a, b, c\n+, form1, form2\n  int64%0A \n@@ -199,23 +199,63 @@\n     \n-c = m - (a + b)\n+form1 = a+b%0A        form2 = form1 - m%0A        c = form2\n %0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-13_18-02-30",
+            "content": "@@ -218,10 +218,8 @@\n     \n-/*\n if a\n@@ -381,33 +381,8 @@\n    %7D\n-*/%0A        fmt.Println(c)\n %0A   \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-13_18-02-54",
+            "content": "@@ -210,24 +210,26 @@\n    %0A        \n+/*\n if a%3Eb && a%3E\n@@ -379,16 +379,41 @@\n        %7D\n+*/%0A        fmt.Println(c)\n %0A    %7D%0A%7D\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-13_18-03-23",
+            "content": "@@ -197,29 +197,36 @@\n (a + b)%0A    \n-%7Delse\n+    %0A       \n  if a%3Eb && a\n@@ -378,10 +378,16 @@\n       %7D%0A\n+    %7D%0A\n %7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-13_18-04-04",
+            "content": "@@ -117,33 +117,8 @@\n (&b)\n-%0A    %0A    c = m - (a + b)\n %0A%0A  \n@@ -181,21 +181,41 @@\n         \n-%0A    \n+c = m - (a + b)%0A    %7Delse\n  if a%3Eb \n@@ -371,16 +371,10 @@\n       %7D%0A\n-    %7D%0A\n %7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-13_18-04-38",
+            "content": "@@ -114,16 +114,20 @@\n can(&b)%0A\n+    \n %0A    c =\n@@ -370,50 +370,8 @@\n (c)%0A\n-        %7Delse%7B%0A            fmt.Println(m)%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-13_18-07-22",
+            "content": "@@ -401,16 +401,17 @@\n Println(\n+m\n )%0A      \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-13_18-07-28",
+            "content": "@@ -405,12 +405,8 @@\n tln(\n-%22eu%22\n )%0A  \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-13_18-07-35",
+            "content": "@@ -362,16 +362,61 @@\n ntln(c)%0A\n+        %7Delse%7B%0A            fmt.Println(%22eu%22)%0A\n         \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-13_18-07-43",
+            "content": "@@ -134,16 +134,75 @@\n  (a + b)\n+%0A%0A    if a%3E1 && a%3Cm && b%3E1 && b%3Cm && a!=b && m%3E40 && m%3C110%7B\n %0A       \n@@ -374,12 +374,14 @@\n     %7D%0A    %7D%0A\n+%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-13_18-13-11",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var m, a, b, c int64\n    \n    fmt.Scan(&m)\n    fmt.Scan(&a)\n    fmt.Scan(&b)\n\n    c = m - (a + b)\n        \n     if a>b && a>c{\n            fmt.Println(a)\n        }else if b>a && b>c{\n            fmt.Println(b)\n        }else if c>a && c>b{\n            fmt.Println(c)\n        }\n    }\n",
+            "lines": "19"
+        }
+    ]
+}

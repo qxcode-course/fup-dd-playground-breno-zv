@@ -27,8 +27,18 @@
         },
         {
             "label": "2026-03-17_17-07-38",
-            "content": "package main\nimport \"fmt\"\nfunc main(){\nvar in1, in2, quociente, resto int64\n\nfmt.Scan(&in1, &in2)\n\nquociente = in1 / in2\nresto = in1 % in2\n\nfmt.Printf(\"%d %d\\n\", quociente, resto)\n\n}",
+            "content": "@@ -40,40 +40,143 @@\n var \n-dia string = %22seg%22%0A%0A%0Afmt.Printf(\n+in1, in2, quociente, resto int64%0A%0Afmt.Scan(&in1, &in2)%0A%0Aquociente = in1 / in2%0Aresto = in1 %25 in2%0A%0Afmt.Printf(%22%25d %25d%5Cn%22, quociente, resto\n )%0A%0A%7D\n",
             "lines": "13"
+        },
+        {
+            "label": "2026-03-24_17-07-41",
+            "content": "@@ -10,28 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-)%0A%0A\n func\n@@ -34,522 +34,46 @@\n in()\n- \n %7B%0A\n-%09var q1, q2, q3 int //Quantidade dos 3 produtos%0A%09var p1, p2, p3 float64 //Valor dos 3 produtos%0A%09var dinheiro float64 //Quantidade de dinheiro%0A%0A%09//leitura dos valores enteriormente declarados%0A%09fmt.Scan(&q1)%0A%09fmt.Scan(&q2)%0A%09fmt.Scan(&q3)%0A%0A%09fmt.Scan(&p1)%0A%09fmt.Scan(&p2)%0A%09fmt.Scan(&p3)%0A%0A%09fmt.Scan(&dinheiro)%0A%09//rela%C3%A7%C3%A3o dos valores%0A%09total := float64(q1)*p1 + float64(q2)*p2 + float64(q3)*p3%0A%09troco := dinheiro - total%0A%0A%09fmt.Printf(%22%25.2f%5Cn%22, troco) //O valor do troco que a pessoa deve receber, com duas casas decimais.\n+var dia string = %22seg%22%0A%0A%0Afmt.Printf()%0A\n %0A%7D\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-24_17-17-24",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\nfunc main() {\n\tvar q1, q2, q3 int //Quantidade dos 3 produtos\n\tvar p1, p2, p3 float64 //Valor dos 3 produtos\n\tvar dinheiro float64 //Quantidade de dinheiro\n\n\t//leitura dos valores enteriormente declarados\n\tfmt.Scan(&q1)\n\tfmt.Scan(&q2)\n\tfmt.Scan(&q3)\n\n\tfmt.Scan(&p1)\n\tfmt.Scan(&p2)\n\tfmt.Scan(&p3)\n\n\tfmt.Scan(&dinheiro)\n\t//rela\u00e7\u00e3o dos valores\n\ttotal := float64(q1)*p1 + float64(q2)*p2 + float64(q3)*p3\n\ttroco := dinheiro - total\n\n\tfmt.Printf(\"%.2f\\n\", troco) //O valor do troco que a pessoa deve receber, com duas casas decimais.\n}",
+            "lines": "27"
         }
     ]
 }

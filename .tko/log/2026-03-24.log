@@ -1,0 +1,6 @@
+2026-03-24 17:07:39, MOVE, v:1, k:fup@sobrou, mode:PICK
+2026-03-24 17:07:41, EXEC, v:1, k:fup@sobrou, mode:FULL, size:9, fail:COMP
+2026-03-24 17:17:24, EXEC, v:1, k:fup@sobrou, mode:FULL, rate:100, size:27
+2026-03-24 17:25:16, EXEC, v:1, k:fup@sobrou, mode:FULL, rate:100
+2026-03-24 17:25:29, MOVE, v:1, k:fup@sobrou, mode:BACK
+2026-03-24 17:26:24, SELF, v:1, k:fup@sobrou, self:1, rate:100, study:20, friend:nao, problem:1

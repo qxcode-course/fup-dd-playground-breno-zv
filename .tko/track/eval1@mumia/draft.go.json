@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-25-18",
+            "content": "@@ -1,616 +1,75 @@\n-/*%0A%0A- %22crianca%22 se menor que 12 (n%C3%A3o use o %C3%A7),%0A- %22jovem%22 se menor que 18,%0A- %22adulto%22 se menor que 65,%0A- %22idoso%22 se menor que 1000,%0A- %22mumia%22 caso contrario (n%C3%A3o ponha o acento).%0A%0A*/%0A%0Apackage main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var idade int%0A    var pessoa string%0A%0A    fmt.Scan(&pessoa)%0A    fmt.Scan(&idade)%0A%0A    if idade %3C 12%7B%0A        fmt.Println(%22crianca%22)%0A    %7Delse if idade %3E= 12 && idade %3C 18%7B%0A        fmt.Println(%22jovem%22)%0A    %7Delse if idade %3E= 18 && idade %3C 65%7B%0A        fmt.Println(%22adulto%22)%0A    %7Delse if idade %3E= 65 && idade %3C 1000%7B%0A        fmt.Println(%22idoso%22)%0A    %7Delse%7B%0A        fmt.Println(%22mumia%22)%0A    %7D\n+package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-13_17-32-46",
+            "content": "@@ -341,33 +341,20 @@\n rint\n-f(%22%25s eh crianca%22, pessoa\n+ln(%22crianca%22\n )%0A  \n@@ -412,31 +412,18 @@\n rint\n-f(%22%25s eh jovem%22, pessoa\n+ln(%22jovem%22\n )%0A  \n@@ -481,32 +481,19 @@\n rint\n-f(%22%25s eh adulto%22, pessoa\n+ln(%22adulto%22\n )%0A  \n@@ -553,31 +553,18 @@\n rint\n-f(%22%25s eh idoso%22, pessoa\n+ln(%22idoso%22\n )%0A  \n@@ -593,31 +593,18 @@\n rint\n-f(%22%25s eh mumia%22, pessoa\n+ln(%22mumia%22\n )%0A  \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-04-13_17-35-16",
+            "content": "@@ -353,18 +353,16 @@\n  crianca\n-%5Cn\n %22, pesso\n@@ -435,18 +435,16 @@\n eh jovem\n-%5Cn\n %22, pesso\n@@ -518,18 +518,16 @@\n h adulto\n-%5Cn\n %22, pesso\n@@ -602,18 +602,16 @@\n eh idoso\n-%5Cn\n %22, pesso\n@@ -659,10 +659,8 @@\n umia\n-%5Cn\n %22, p\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-04-13_17-35-40",
+            "content": "/*\n\n- \"crianca\" se menor que 12 (n\u00e3o use o \u00e7),\n- \"jovem\" se menor que 18,\n- \"adulto\" se menor que 65,\n- \"idoso\" se menor que 1000,\n- \"mumia\" caso contrario (n\u00e3o ponha o acento).\n\n*/\n\npackage main\nimport \"fmt\"\nfunc main() {\n    var idade int\n    var pessoa string\n\n    fmt.Scan(&pessoa)\n    fmt.Scan(&idade)\n\n    if idade < 12{\n        fmt.Printf(\"%s eh crianca\\n\", pessoa)\n    }else if idade >= 12 && idade < 18{\n        fmt.Printf(\"%s eh jovem\\n\", pessoa)\n    }else if idade >= 18 && idade < 65{\n        fmt.Printf(\"%s eh adulto\\n\", pessoa)\n    }else if idade >= 65 && idade < 1000{\n        fmt.Printf(\"%s eh idoso\\n\", pessoa)\n    }else{\n        fmt.Printf(\"%s eh mumia\\n\", pessoa)\n    }\n}\n",
+            "lines": "31"
+        }
+    ]
+}
