@@ -22,25 +22,19 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@dict
 - fup@base
-- fup@rec
-- fup@for1
-- fup@if_extra
-- fup@if1
-- fup@str2
-- fup@if2
-- fup@list_extra
-- eval1@teste-1
-- fup@str_extra
-- fup@list1
 - fup@games
-- fup@list2
-- fup@mat
-- fup@for_extra
+- fup@rec
 - fup@for2
-- fup@str1
+- fup@mat
+- fup@if1
+- fup@for_extra
+- fup@if_extra
 - fup@struct
+- fup@for1
+- fup@list
+- fup@dict
+- fup@if2
 flags:
   inbox: all
   panel: help
@@ -48,4 +42,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: eval1@ceu
+selected: fup@tv
+selected_index: 13

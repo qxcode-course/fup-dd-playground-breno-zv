@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_17-44-41",
+            "content": "@@ -41,152 +41,35 @@\n     \n-var n1, n2 int64%0A    fmt.Scan(%22%25d%22, &n1)%0A    fmt.Scan(%22%25d%22, &n2)%0A%0A    if n1%3Cn2%7B%0A        fmt.Println(n1)%0A    %7Delse%7B%0A        fmt.Println(n2)%0A    %7D%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-28_17-52-59",
+            "content": "@@ -154,17 +154,8 @@\n else\n- if n2%3Cn1\n %7B%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_17-53-13",
+            "content": "@@ -189,43 +189,8 @@\n n2)%0A\n-    %7Delse%7B%0A        fmt.Println(n1)%0A\n     \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_17-54-30",
+            "content": "@@ -112,17 +112,17 @@\n    if n1\n-%3E\n+%3C\n n2%7B%0A    \n@@ -160,9 +160,9 @@\n f n2\n-%3E\n+%3C\n n1%7B%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-28_17-57-54",
+            "content": "@@ -54,20 +54,16 @@\n 2 int64%0A\n-    \n     fmt.\n@@ -74,32 +74,24 @@\n (%22%25d%22, &n1)%0A\n-        \n     fmt.Scan\n@@ -103,28 +103,16 @@\n , &n2)%0A%0A\n-            \n     if n\n@@ -117,32 +117,16 @@\n  n1%3En2%7B%0A\n-                \n         \n@@ -149,320 +149,88 @@\n     \n-                        %7Delse if n2%3En1%7B%0A                                    fmt.Println(n2)%0A                                        %7Delse%7B%0A                                                fmt.Println(n1)%0A                                                    %7D%0A                                                         \n+%7Delse if n2%3En1%7B%0A        fmt.Println(n2)%0A    %7Delse%7B%0A        fmt.Println(n1)%0A    %7D%0A%0A\n %7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-29_16-00-02",
+            "content": "@@ -54,16 +54,20 @@\n 2 int64%0A\n+    \n     fmt.\n@@ -78,24 +78,32 @@\n (%22%25d%22, &n1)%0A\n+        \n     fmt.Scan\n@@ -115,16 +115,28 @@\n , &n2)%0A%0A\n+            \n     if n\n@@ -141,16 +141,32 @@\n  n1%3En2%7B%0A\n+                \n         \n@@ -189,87 +189,320 @@\n     \n-%7Delse if n2%3En1%7B%0A        fmt.Println(n2)%0A    %7Delse%7B%0A        fmt.Println(n1)%0A    %7D%0A\n+                        %7Delse if n2%3En1%7B%0A                                    fmt.Println(n2)%0A                                        %7Delse%7B%0A                                                fmt.Println(n1)%0A                                                    %7D%0A                                                         \n %7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-29_16-00-54",
+            "content": "@@ -51,15 +51,8 @@\n , n2\n-, maior\n  int\n@@ -129,18 +129,23 @@\n     \n-maior = \n+fmt.Println(\n n1\n+)\n %0A   \n@@ -150,16 +150,25 @@\n    %7Delse\n+ if n2%3En1\n %7B%0A      \n@@ -173,29 +173,43 @@\n     \n-maior = \n+fmt.Println(\n n2\n+)\n %0A    %7D\n-%0A\n+else%7B%0A \n     \n+   \n fmt.\n@@ -220,13 +220,16 @@\n tln(\n-maior)\n+n1)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-29_16-06-42",
+            "content": "@@ -17,19 +17,14 @@\n ort \n-(%0A%09\n %22fmt%22%0A\n-)%0A\n func\n@@ -37,93 +37,158 @@\n ) %7B%0A\n-%09var a, b int%0A%0A%09fmt.Scan(&a)%0A%09fmt.Scan(&b)%0A%0A%09if a %3E b %7B%0A%09%09fmt.Println(a)%0A%09%7D else %7B%0A%09%09\n+    var n1, n2, maior int64%0A    fmt.Scan(%22%25d%22, &n1)%0A    fmt.Scan(%22%25d%22, &n2)%0A%0A    if n1%3En2%7B%0A        maior = n1%0A    %7Delse%7B%0A        maior = n2%0A    %7D%0A    \n fmt.\n@@ -199,12 +199,13 @@\n tln(\n-b)%0A%09%7D\n+maior)\n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-29_16-08-00",
+            "content": "@@ -113,16 +113,17 @@\n ln(a)%0A%09%7D\n+ \n else %7B%0A%09\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-29_16-09-22",
+            "content": "package main\nimport (\n\t\"fmt\"\n)\nfunc main() {\n\tvar a, b int\n\n\tfmt.Scan(&a)\n\tfmt.Scan(&b)\n\n\tif a > b {\n\t\tfmt.Println(a)\n\t}else {\n\t\tfmt.Println(b)\n\t}\n}\n",
+            "lines": "16"
+        }
+    ]
+}

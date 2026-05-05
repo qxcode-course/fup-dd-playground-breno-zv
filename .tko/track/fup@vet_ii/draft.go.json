@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-14_17-18-41",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -23,402 +23,52 @@\n mt%22%0A\n-%0A// impuras%0Afunc mostrar_vetor(arr %5B%5Dint, sep string) %7B%0A    fmt.Print(%22%5B%22)%0A    for i, valor := range arr %7B%0A        if i != 0 %7B%0A            fmt.Print(sep)%0A        %7D%0A        fmt.Printf(%22%25v%22, valor)%0A    %7D%0A    fmt.Print(%22%5D%5Cn%22)%0A%7D%0A%0Afunc main() %7B%0A    var qtd int%0A    fmt.Scan(&qtd)%0A    var arr %5B%5Dint = make(%5B%5Dint, qtd)%0A    for i := range arr %7B%0A        fmt.Scan(&arr%5Bi%5D)%0A    %7D%0A    mostrar_vetor(arr, %22 \n+func main() %7B%0A    fmt.Println(%22Hello, World!\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-14_17-36-04",
+            "content": "@@ -21,16 +21,27 @@\n  %22fmt%22%0A%0A\n+// impuras%0A\n func mos\n@@ -92,17 +92,16 @@\n Print(%22%5B\n- \n %22)%0A    f\n@@ -237,17 +237,16 @@\n .Print(%22\n- \n %5D%5Cn%22)%0A%7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-14_17-36-42",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc mostrar_vetor(arr []int, sep string) {\n    fmt.Print(\"[ \")\n    for i, valor := range arr {\n        if i != 0 {\n            fmt.Print(sep)\n        }\n        fmt.Printf(\"%v\", valor)\n    }\n    fmt.Print(\" ]\\n\")\n}\n\nfunc main() {\n    var qtd int\n    fmt.Scan(&qtd)\n    var arr []int = make([]int, qtd)\n    for i := range arr {\n        fmt.Scan(&arr[i])\n    }\n    mostrar_vetor(arr, \" \")\n}\n",
+            "lines": "24"
+        }
+    ]
+}

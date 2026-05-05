@@ -1,12 +1,19 @@
 package main
-import "fmt"
-func main() {
-    var v1, v2, abs int64
-    fmt.Scan(&v1)
-    fmt.Scan(&v2)
-    if v1>v2{
-        abs = v1-v2
-    }else if v2<
+import (
+	"fmt"
+)
+func abs(n int) int {
+	if n < 0 {
+		return -n
+	}
+	return n
+}
 
-    fmt.Printf("%d", abs)
+func main() {
+	var a, b int
+	fmt.Scan(&a)
+	fmt.Scan(&b)
+
+	resultado := abs(a - b)
+	fmt.Println(resultado)
 }

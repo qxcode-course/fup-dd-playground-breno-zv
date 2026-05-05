@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-14_16-49-19",
+            "content": "@@ -41,175 +41,34 @@\n     \n-var arr, valor int64%0A%0A    arr = %5B%5Dint%7B9, 8, 4, 5, 6, 2, 3%7D%0A    fmt.Println(%22%5B %22)%0A    for _, valor = range arr%7B%0A    fmt.Printf(%22%25d %22, valor)%0A    %7D%0A    fmt.Println(%22 %5D%5Cn\n+fmt.Println(%22Hello, World!\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-14_17-14-39",
+            "content": "@@ -32,16 +32,41 @@\n main() %7B\n+%0A    var arr, valor int64\n %0A%0A    ar\n@@ -67,17 +67,16 @@\n     arr \n-:\n = %5B%5Dint%7B\n@@ -139,9 +139,8 @@\n lor \n-:\n = ra\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-14_17-14-56",
+            "content": "@@ -173,16 +173,18 @@\n mt.Print\n+ln\n (%22 %5D%5Cn%22)\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-14_17-15-53",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\n    arr := []int{9, 8, 4, 5, 6, 2, 3}\n    fmt.Println(\"[ \")\n    for _, valor := range arr{\n    fmt.Printf(\"%d \", valor)\n    }\n    fmt.Print(\" ]\\n\")\n}\n",
+            "lines": "11"
+        }
+    ]
+}

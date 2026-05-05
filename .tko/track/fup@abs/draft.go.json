@@ -12,8 +12,18 @@
         },
         {
             "label": "2026-04-07_16-48-49",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var v1, v2, abs int64\n    fmt.Scan(&v1, &v2)\n    abs = (v1+v2)\n\n    fmt.Printf(\"%d\", abs)\n}\n",
+            "content": "@@ -79,46 +79,15 @@\n (&v1\n-)%0A    fmt.Scan(&v2)%0A    if v1%3Ev2%7B%0A    \n+, &v2)%0A\n     \n@@ -96,30 +96,15 @@\n s = \n+(\n v1\n--v2%0A    %7Delse if v2%3C\n++v2)\n %0A%0A  \n",
             "lines": "9"
+        },
+        {
+            "label": "2026-04-28_17-24-03",
+            "content": "@@ -17,110 +17,58 @@\n ort \n-(%0A%09\n %22fmt%22%0A\n-)%0A\n func \n+m\n a\n-bs(n \n in\n-t) int %7B%0A%09if n %3C 0 %7B%0A%09%09return -n%0A%09%7D%0A%09return n%0A%7D%0A%0Afunc main() %7B%0A%09var a, b int%0A%09\n+() %7B%0A    var v1, v2, abs int64%0A    \n fmt.\n@@ -77,12 +77,16 @@\n an(&\n-a)%0A%09\n+v1)%0A    \n fmt.\n@@ -95,59 +95,88 @@\n an(&\n-b)%0A%0A%09resultado := abs(a - b)%0A%09fmt.Println(resultado\n+v2)%0A    if v1%3Ev2%7B%0A        abs = v1-v2%0A    %7Delse if v2%3C%0A%0A    fmt.Printf(%22%25d%22, abs\n )%0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-28_17-36-38",
+            "content": "package main\nimport (\n\t\"fmt\"\n)\nfunc abs(n int) int {\n\tif n < 0 {\n\t\treturn -n\n\t}\n\treturn n\n}\n\nfunc main() {\n\tvar a, b int\n\tfmt.Scan(&a)\n\tfmt.Scan(&b)\n\n\tresultado := abs(a - b)\n\tfmt.Println(resultado)\n}\n",
+            "lines": "19"
         }
     ]
 }
