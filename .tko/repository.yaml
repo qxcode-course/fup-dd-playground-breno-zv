@@ -42,5 +42,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@tv
-selected_index: 13
+selected: fup@loop_iii
+selected_index: 68

@@ -47,8 +47,68 @@
         },
         {
             "label": "2026-04-07_18-11-48",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar a, b int64\n\n\tfmt.Scan(&a, &b)\n\tfmt.Printf(\"[\")\n\t    for i := a; i < b; i--{\n\t\t    fmt.Printf(\"%d\", i)\n\t}\n\tfmt.Printf(\"]\\n\")\n\n}\n",
+            "content": "@@ -84,17 +84,16 @@\n rintf(%22%5B\n- \n %22)%0A%09    \n@@ -136,17 +136,16 @@\n intf(%22%25d\n- \n %22, i)%0A%09%7D\n",
             "lines": "15"
+        },
+        {
+            "label": "2026-05-05_18-15-42",
+            "content": "@@ -151,24 +151,8 @@\n %0A%09%7D%0A\n-%09fmt.Println(i)%0A\n %09fmt\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-05_18-18-03",
+            "content": "@@ -147,16 +147,32 @@\n , i)%0A%09%7D%0A\n+%09fmt.Println(i)%0A\n %09fmt.Pri\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-05_18-19-01",
+            "content": "@@ -48,16 +48,18 @@\n a, b int\n+64\n %0A%0A%09fmt.S\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-05_18-19-54",
+            "content": "@@ -142,17 +142,16 @@\n d %22, i)%0A\n-%09\n %09%7D%0A%09fmt.\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-05_18-20-54",
+            "content": "@@ -136,16 +136,22 @@\n ntf(\n+%22%25d %22, \n i)%0A%09%09%7D%0A\n-%0A\n %09fmt\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-05_18-21-03",
+            "content": "@@ -130,16 +130,17 @@\n mt.Print\n+f\n (i)%0A%09%09%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-05_18-21-09",
+            "content": "@@ -86,17 +86,16 @@\n f(%22%5B %22)%0A\n-%0A\n %09    for\n@@ -109,17 +109,16 @@\n ; i \n-%3E\n+%3C\n  b; i--\n- \n %7B%0A%09%09\n@@ -134,16 +134,9 @@\n rint\n-f(%22%25d%22, \n+(\n i)%0A%09\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-05_18-22-35",
+            "content": "@@ -137,17 +137,16 @@\n intf(%22%25d\n- \n %22, i)%0A%09%09\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-05_18-23-00",
+            "content": "@@ -135,17 +135,16 @@\n Printf(%22\n- \n %25d %22, i)\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-05_18-23-09",
+            "content": "@@ -138,16 +138,17 @@\n ntf(%22 %25d\n+ \n %22, i)%0A%09%09\n@@ -163,17 +163,16 @@\n Printf(%22\n- \n %5D%5Cn%22)%0A%0A%7D\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-05_18-23-28",
+            "content": "@@ -82,16 +82,17 @@\n rintf(%22%5B\n+ \n %22)%0A%0A%09   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-05_18-23-33",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar a, b int\n\n\tfmt.Scan(&a, &b)\n\tfmt.Printf(\"[\")\n\n\t    for i := a; i > b; i-- {\n\t\t    fmt.Printf(\" %d\", i)\n\t\t}\n\n\tfmt.Printf(\" ]\\n\")\n\n}\n",
+            "lines": "17"
         }
     ]
 }

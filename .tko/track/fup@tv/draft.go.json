@@ -2,8 +2,58 @@
     "patches": [
         {
             "label": "2026-05-05_17-09-07",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,213 +41,35 @@\n     \n-var value, parc, porcJu float64%0A%0A    fmt.Scan(%22%25f%22, &value)%0A    fmt.Scan(%22%25f%22, &parc)%0A%0A    porcJu = (parc-1)*5%0A%0A    fmt.Printf(%22%25.2f%22, ((value*porcJu)+value)/parc)%0A    fmt.Printf(%22%25.2f%22, value*porcJu+value\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-05-05_17-46-08",
+            "content": "@@ -56,16 +56,24 @@\n parc\n+, porcJu\n  float64\n %0A   \n@@ -72,26 +72,8 @@\n at64\n-%0A     porcJu:=0.0 \n %0A%0A  \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-05_17-48-17",
+            "content": "@@ -56,16 +56,8 @@\n parc\n-, porcJu\n  flo\n@@ -61,16 +61,33 @@\n float64%0A\n+     porcJu:=0.0 \n %0A%0A    fm\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-05_17-50-01",
+            "content": "@@ -70,16 +70,17 @@\n loat64%0A%0A\n+%0A\n     fmt.\n@@ -138,17 +138,16 @@\n orcJu = \n-(\n (parc-1)\n@@ -152,13 +152,8 @@\n 1)*5\n-)/100\n %0A%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-05_17-51-44",
+            "content": "@@ -254,35 +254,6 @@\n ue)%0A\n-    fmt.Printf(%22%25f%22, porcJu)%0A\n %7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-05_17-52-30",
+            "content": "@@ -231,10 +231,8 @@\n %25.2f\n-%5Cn\n %22, v\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-05_17-52-45",
+            "content": "@@ -274,15 +274,17 @@\n (%22%25f%22, p\n-a\n+o\n rc\n+Ju\n )%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-05_17-54-19",
+            "content": "@@ -273,17 +273,16 @@\n f(%22%25f%22, \n-value\n+parc\n )%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-05_17-54-41",
+            "content": "@@ -74,33 +74,32 @@\n 64%0A%0A    fmt.Scan\n-f\n (%22%25f%22, &value)%0A \n@@ -109,17 +109,16 @@\n fmt.Scan\n-f\n (%22%25f%22, &\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-05_17-54-59",
+            "content": "@@ -177,18 +177,16 @@\n tf(%22%25.2f\n-%5Cn\n %22, ((val\n@@ -254,11 +254,38 @@\n +value)%0A\n+    fmt.Printf(%22%25f%22, value)\n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-05_17-55-13",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var value, parc, porcJu float64\n\n    fmt.Scanf(\"%f\", &value)\n    fmt.Scanf(\"%f\", &parc)\n\n    porcJu = ((parc-1)*5)/100\n\n    fmt.Printf(\"%.2f\\n\", ((value*porcJu)+value)/parc)\n    fmt.Printf(\"%.2f\\n\", value*porcJu+value)\n\n}\n",
+            "lines": "14"
         }
     ]
 }
