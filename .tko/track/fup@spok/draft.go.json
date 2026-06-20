@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-20_14-43-04",
+            "content": "package main\nimport \"fmt\"\n\nfunc inverter(n int) int {\n\tinvertido := 0\n\n\tfor n > 0 {\n\t\tdigito := n % 10\n\t\tinvertido = invertido*10 + digito\n\t\tn = n / 10\n\t}\n\n\treturn invertido\n}\n\nfunc palindromo(n int) int {\n\tif n == inverter(n) {\n\t\treturn 1\n\t}\n\treturn 0\n}\n\nfunc main() {\n\tvar id int\n\n\tfmt.Scan(&id)\n\n\tfmt.Println(palindromo(id))\n}\n",
+            "lines": "29"
+        }
+    ]
+}

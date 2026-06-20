@@ -1,0 +1,27 @@
+2026-05-12 16:53:46, MOVE, v:1, k:fup@loop_iv, mode:DOWN
+2026-05-12 16:53:47, MOVE, v:1, k:fup@loop_iv, mode:PICK
+2026-05-12 16:53:49, EXEC, v:1, k:fup@loop_iv, mode:FULL, rate:0, size:5
+2026-05-12 16:53:46, MOVE, v:1, k:fup@loop_iv, mode:EDIT
+2026-05-12 16:53:46, MOVE, v:1, k:fup@loop_iv, mode:EDIT
+2026-05-12 16:55:33, MOVE, v:1, k:fup@loop_iv, mode:EDIT
+2026-05-12 16:53:49, MOVE, v:1, k:fup@loop_iv, mode:EDIT
+2026-05-12 16:55:25, MOVE, v:1, k:fup@loop_iii, mode:EDIT
+2026-05-12 16:59:38, EXEC, v:1, k:fup@loop_iv, mode:FULL, rate:0, size:14
+2026-05-12 16:59:48, EXEC, v:1, k:fup@loop_iv, mode:FULL, rate:0
+2026-05-12 17:00:13, EXEC, v:1, k:fup@loop_iv, mode:FULL, rate:0
+2026-05-12 17:01:08, MOVE, v:1, k:fup@loop_iv, mode:EDIT
+2026-05-12 17:00:12, MOVE, v:1, k:fup@loop_iv, mode:EDIT
+2026-05-12 17:12:37, MOVE, v:1, k:fup@loop_iv, mode:EDIT
+2026-05-12 17:24:51, EXEC, v:1, k:fup@loop_iv, mode:FULL, rate:100, size:19
+2026-05-12 17:24:51, MOVE, v:1, k:fup@loop_iv, mode:EDIT
+2026-05-12 17:30:10, SELF, v:1, k:fup@loop_iv, self:1, rate:100, study:10
+2026-05-12 17:30:11, EXEC, v:1, k:fup@loop_iv, mode:FULL, rate:100
+2026-05-12 17:30:11, EXEC, v:1, k:fup@loop_iv, mode:FULL, rate:100
+2026-05-12 17:30:12, EXEC, v:1, k:fup@loop_iv, mode:FULL, rate:100
+2026-05-12 17:30:12, EXEC, v:1, k:fup@loop_iv, mode:FULL, rate:100
+2026-05-12 17:33:23, MOVE, v:1, k:fup@loop_iv, mode:BACK
+2026-05-12 17:33:31, MOVE, v:1, k:fup@loop_v, mode:DOWN
+2026-05-12 17:30:12, MOVE, v:1, k:fup@loop_iv, mode:EDIT
+2026-05-12 17:33:31, MOVE, v:1, k:fup@loop_v, mode:EDIT
+2026-05-12 17:33:31, MOVE, v:1, k:fup@loop_v, mode:EDIT
+2026-05-12 17:33:33, MOVE, v:1, k:fup@loop_v, mode:PICK

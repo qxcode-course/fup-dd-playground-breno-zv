@@ -1,0 +1,10 @@
+2026-05-14 18:43:20, MOVE, v:1, k:fup@multiplo, mode:DOWN
+2026-05-14 18:43:20, MOVE, v:1, k:fup@multiplo, mode:PICK
+2026-05-14 18:43:23, EXEC, v:1, k:fup@multiplo, mode:FULL, rate:0, size:5
+2026-05-14 18:45:22, EXEC, v:1, k:fup@multiplo, mode:FULL, rate:100, size:13
+2026-05-14 18:45:46, SELF, v:1, k:fup@multiplo, self:1, rate:100, study:4
+2026-05-14 18:45:48, MOVE, v:1, k:fup@multiplo, mode:BACK
+2026-05-14 18:43:20, MOVE, v:1, k:fup@multiplo, mode:EDIT
+2026-05-14 18:43:20, MOVE, v:1, k:fup@multiplo, mode:EDIT
+2026-05-14 18:45:35, MOVE, v:1, k:fup@multiplo, mode:EDIT
+2026-05-14 18:45:22, MOVE, v:1, k:fup@multiplo, mode:EDIT

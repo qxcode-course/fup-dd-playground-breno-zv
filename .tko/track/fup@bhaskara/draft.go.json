@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_03-44-16",
+            "content": "@@ -43,16 +43,17 @@\n c main()\n+ \n %7B%0A%09var a\n@@ -142,26 +142,8 @@\n *a*c\n-%0A%09const eps = 1e-9\n %0A%0A%09i\n@@ -152,19 +152,18 @@\n delta %3E \n-eps\n+0 \n %7B%0A%09%09x1 :\n@@ -309,30 +309,18 @@\n  if \n-math.Abs(delta) %3C= eps\n+delta == 0\n %7B%0A%09%09\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-16_03-45-19",
+            "content": "@@ -36,96 +36,8 @@\n %22%0A)%0A\n-func ajustaZero(x float64) float64 %7B%0A%09if math.Abs(x) %3C 1e-9 %7B%0A%09%09return 0%0A%09%7D%0A%09return x%0A%7D%0A\n func\n@@ -43,17 +43,16 @@\n c main()\n- \n %7B%0A%09var a\n@@ -142,110 +142,117 @@\n a*c%0A\n-%0A%09if delta %3C 0 %7B%0A%09%09fmt.Println(%22nao ha raiz real%22)%0A%09%09return%0A%09%7D%0A%0A%09if\n+%09const eps = 1e-9%0A%0A%09if delta %3E eps%7B%0A%09%09x1 := (-b +\n  math.\n-Abs\n+Sqrt\n (delta)\n- %3C 1e-9 %7B\n+) / (2 * a)\n %0A%09%09x\n+2\n  := \n+(\n -b\n+ - math.Sqrt(delta))\n  / (\n@@ -262,26 +262,34 @@\n  a)%0A\n+%0A\n %09%09\n-x = ajustaZero(x\n+fmt.Printf(%22%25.2f%5Cn%22, x1\n )%0A%09%09\n@@ -314,149 +314,66 @@\n %22, x\n+2\n )%0A%09\n-%09return%0A%09%7D%0A%0A%09x1 := (-b +\n+%7Delse if\n  math.\n-Sqrt\n+Abs\n (delta)\n-) / (2 * a)%0A\n+ %3C= eps%7B%0A%09\n %09x\n-2\n  := \n-(\n -b \n-- math.Sqrt(delta)) / (2 * a)%0A%0A%09x1 = ajustaZero(x1)%0A%09x2 = ajustaZero(x2)%0A%0A\n+/ (2 * a)%0A%09\n %09fmt\n@@ -395,35 +395,53 @@\n %22, x\n-1\n )%0A%09\n-fmt.Printf(%22%25.2f%5Cn%22, x2)\n+%7Delse%7B%0A%09%09fmt.Println(%22nao ha raiz real%22)%0A%09%7D\n %0A%7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-16_03-52-36",
+            "content": "package main\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc ajustaZero(x float64) float64 {\n\tif math.Abs(x) < 1e-9 {\n\t\treturn 0\n\t}\n\treturn x\n}\nfunc main() {\n\tvar a, b, c float64\n\n\tfmt.Scanln(&a)\n\tfmt.Scanln(&b)\n\tfmt.Scanln(&c)\n\n\tdelta := b*b - 4*a*c\n\n\tif delta < 0 {\n\t\tfmt.Println(\"nao ha raiz real\")\n\t\treturn\n\t}\n\n\tif math.Abs(delta) < 1e-9 {\n\t\tx := -b / (2 * a)\n\t\tx = ajustaZero(x)\n\t\tfmt.Printf(\"%.2f\\n\", x)\n\t\treturn\n\t}\n\n\tx1 := (-b + math.Sqrt(delta)) / (2 * a)\n\tx2 := (-b - math.Sqrt(delta)) / (2 * a)\n\n\tx1 = ajustaZero(x1)\n\tx2 = ajustaZero(x2)\n\n\tfmt.Printf(\"%.2f\\n\", x1)\n\tfmt.Printf(\"%.2f\\n\", x2)\n}\n",
+            "lines": "41"
+        }
+    ]
+}

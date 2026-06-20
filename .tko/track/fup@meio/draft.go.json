@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-25_16-53-48",
+            "content": "@@ -121,17 +121,17 @@\n a%3Eb && a\n-%3C\n+%3E\n c%7B%0A     \n@@ -174,9 +174,9 @@\n && c\n-%3C\n+%3E\n a%7B%0A \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-25_16-54-21",
+            "content": "@@ -127,22 +127,8 @@\n  a%3Cc\n- %7C%7C a%3Cb && a%3Ec\n %7B%0A  \n@@ -176,22 +176,8 @@\n  c%3Ca\n- %7C%7C c%3Cb && c%3Ea\n %7B%0A  \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-25_16-55-25",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b, c int\n\n    fmt.Scan(&a)\n    fmt.Scan(&b)\n    fmt.Scan(&c)\n\n    if a>b && a<c || a<b && a>c{\n        fmt.Println(a)\n    } else if c>b && c<a || c<b && c>a{\n        fmt.Println(c)\n    }else{\n        fmt.Println(b)\n    }\n}\n",
+            "lines": "17"
+        }
+    ]
+}

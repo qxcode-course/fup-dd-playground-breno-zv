@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_04-39-02",
+            "content": "package main\nimport \"fmt\"\nfunc main(){\n\tvar A, B int\n\n\tfmt.Scanln(&A)\n\tfmt.Scanln(&B)\n\n\tif A>B{\n\t\tfmt.Println(\"invalido\")\n\t\treturn\n\t}\n\tsoma := 0\n\tfor i:=A; i<=B; i++{\n\t\tif i%6 ==0{\n\t\t\tsoma += i\n\t\t}\n\t}\n\tfmt.Println(soma)\n}\n",
+            "lines": "20"
+        }
+    ]
+}

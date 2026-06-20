@@ -1,7 +1,5 @@
 package main
-
 import "fmt"
-
 func main() {
 	var a, b int
 
@@ -11,7 +9,6 @@ func main() {
 	    for i := a; i > b; i-- {
 		    fmt.Printf(" %d", i)
 		}
-
 	fmt.Printf(" ]\n")
 
 }

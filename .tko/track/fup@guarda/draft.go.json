@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-15_01-52-38",
+            "content": "@@ -37,278 +37,38 @@\n ) %7B%0A\n-%09var w, log, adm int%0A%0A%09fmt.Scan(&w, &log, &adm)%0A%0A%09if w == 0 %7B%0A%09%09fmt.Println(%22you must connect to wifi%22)%0A%09%09return%0A%09%7D%0A%09if log == 0 %7B%0A%09%09fmt.Println(%22you need to login first%22)%0A%09%09return%0A%09%7D%0A%09if adm == 0 %7B%0A%09%09fmt.Println(%22you must login as admin%22)%0A%09%09return%0A%09%7D%0A%09fmt.Println(%22done\n+    fmt.Println(%22Hello, World!\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-15_01-57-09",
+            "content": "@@ -256,19 +256,16 @@\n ou must \n-to \n login as\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-15_01-57-30",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar w, log, adm int\n\n\tfmt.Scan(&w, &log, &adm)\n\n\tif w == 0 {\n\t\tfmt.Println(\"you must connect to wifi\")\n\t\treturn\n\t}\n\tif log == 0 {\n\t\tfmt.Println(\"you need to login first\")\n\t\treturn\n\t}\n\tif adm == 0 {\n\t\tfmt.Println(\"you must to login as admin\")\n\t\treturn\n\t}\n\tfmt.Println(\"done\")\n}\n",
+            "lines": "21"
+        }
+    ]
+}

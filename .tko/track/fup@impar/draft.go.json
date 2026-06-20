@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-18_17-53-47",
+            "content": "@@ -37,259 +37,39 @@\n ) %7B%0A\n-%09var p, d1, d2, soma int%0A%0A%09fmt.Scan(&p)%0A%09fmt.Scan(&d1)%0A%09fmt.Scan(&d2)%0A%0A%09soma = d1 + d2%0A%0A%09if soma%252 == 0 %7B%0A%09%09if p == 0 %7B%0A%09%09%09fmt.Println(0) %0A%09%09%7D else %7B%0A%09%09%09fmt.Println(1) %0A%09%09%7D%0A%09%7D else %7B %0A%09%09if p == 0 %7B%0A%09%09%09fmt.Println(1) %0A%09%09%7D else %7B%0A%09%09%09fmt.Println(0)%0A%09%09%7D%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        }
+    ]
+}

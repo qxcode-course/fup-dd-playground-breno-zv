@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-20_14-39-11",
+            "content": "@@ -147,20 +147,19 @@\n  == 0 %7B%0A\n-    \n+%09%09%09\n fmt.Prin\n@@ -167,24 +167,26 @@\n ln(%22vazio%22)%0A\n+%09%09\n %7D else if pa\n@@ -197,28 +197,27 @@\n eiros %3C c %7B%0A\n-    \n+%09%09%09\n fmt.Println(\n@@ -230,16 +230,18 @@\n  cabe%22)%0A\n+%09%09\n %7D else i\n@@ -258,20 +258,18 @@\n ros \n-%3C 2*c %7B%0A    \n+== c %7B%0A%09%09%09\n fmt.\n@@ -290,21 +290,44 @@\n o%22)%0A\n+%09%09\n %7D else \n-%7B%0A    \n+if passageiros == 2*c %7B%0A%09%09%09\n fmt.\n@@ -356,18 +356,59 @@\n r%22)%0A\n-    break%0A\n+%09%09%09break%0A%09%09%7D else %7B%0A%09%09%09fmt.Println(%22ainda cabe%22)%0A%09%09\n %7D%0A%09%7D\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-20_14-40-46",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar c, m int\n\tpassageiros := 0\n\n\tfmt.Scan(&c)\n\n\tfor {\n\t\tfmt.Scan(&m)\n\t\tpassageiros += m\n\n\t\tif passageiros == 0 {\n    fmt.Println(\"vazio\")\n} else if passageiros < c {\n    fmt.Println(\"ainda cabe\")\n} else if passageiros < 2*c {\n    fmt.Println(\"lotado\")\n} else {\n    fmt.Println(\"hora de partir\")\n    break\n}\n\t}\n}\n",
+            "lines": "24"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-20_14-46-21",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar n int\n\n\tfmt.Scan(&n)\n\n\tfator := 2\n\tcontagem := 0\n\n\tfor n != 1 {\n\t\tif n%fator == 0 {\n\t\t\tn /= fator\n\t\t\tcontagem++\n\t\t} else {\n\t\t\tif contagem > 0 {\n\t\t\t\tfmt.Println(fator, contagem)\n\t\t\t}\n\t\t\tfator++\n\t\t\tcontagem = 0\n\t\t}\n\t}\n\n\tif contagem > 0 {\n\t\tfmt.Println(fator, contagem)\n\t}\n}\n",
+            "lines": "27"
+        }
+    ]
+}

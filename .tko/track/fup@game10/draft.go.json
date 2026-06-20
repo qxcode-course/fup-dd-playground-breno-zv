@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_04-20-17",
+            "content": "@@ -117,11 +117,11 @@\n tln(\n-D-A\n+A-D\n +N)%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-16_04-20-27",
+            "content": "@@ -117,18 +117,13 @@\n tln(\n-(\n D-A+N)\n-%25 N)\n %0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-16_04-20-37",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar N, D, A int\n\n\tfmt.Scanln(&N)\n\tfmt.Scanln(&D)\n\tfmt.Scanln(&A)\n\n\tfmt.Println((D-A+N)% N)\n}\n",
+            "lines": "11"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-20_14-44-06",
+            "content": "@@ -6,16 +6,17 @@\n ge main%0A\n+%0A\n import %22\n@@ -20,16 +20,17 @@\n t %22fmt%22%0A\n+%0A\n func mai\n@@ -100,16 +100,20 @@\n e)%0A%0A%09pos\n+icao\n  := 0%0A%0A%09\n@@ -122,16 +122,32 @@\n r %7B%0A\n+%09%09posicao += s%0A%0A\n %09%09if pos\n +s %3E\n@@ -142,18 +142,20 @@\n %09%09if pos\n-+s\n+icao\n  %3E= p %7B%0A\n@@ -172,16 +172,20 @@\n ntln(pos\n+icao\n , %22saiu%22\n@@ -221,23 +221,20 @@\n (pos\n-, pos+s\n+icao\n )%0A%0A%09%09pos\n  = p\n@@ -233,22 +233,41 @@\n %09pos\n- = pos + s - e\n+icao -= e%0A%0A%09%09fmt.Println(posicao)\n %0A%09%7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-20_14-44-53",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar p, s, e int\n\n\tfmt.Scan(&p)\n\tfmt.Scan(&s)\n\tfmt.Scan(&e)\n\n\tpos := 0\n\n\tfor {\n\t\tif pos+s >= p {\n\t\t\tfmt.Println(pos, \"saiu\")\n\t\t\tbreak\n\t\t}\n\n\t\tfmt.Println(pos, pos+s)\n\n\t\tpos = pos + s - e\n\t}\n}\n",
+            "lines": "22"
+        }
+    ]
+}

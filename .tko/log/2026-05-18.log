@@ -1,0 +1,15 @@
+2026-05-18 17:40:36, MOVE, v:1, k:fup@quantos, mode:PICK
+2026-05-18 17:40:38, EXEC, v:1, k:fup@quantos, mode:FULL, rate:100
+2026-05-18 17:40:39, MOVE, v:1, k:fup@quantos, mode:BACK
+2026-05-18 17:40:41, MOVE, v:1, k:fup@quantos, mode:PICK
+2026-05-18 17:40:42, EXEC, v:1, k:fup@quantos, mode:FULL, rate:100
+2026-05-18 17:40:49, SELF, v:1, k:fup@quantos, self:1, rate:100, study:5
+2026-05-18 17:40:49, EXEC, v:1, k:fup@quantos, mode:FULL, rate:100
+2026-05-18 17:40:51, MOVE, v:1, k:fup@quantos, mode:BACK
+2026-05-18 17:40:49, MOVE, v:1, k:fup@quantos, mode:EDIT
+2026-05-18 17:53:44, MOVE, v:1, k:fup@impar, mode:DOWN
+2026-05-18 17:53:45, MOVE, v:1, k:fup@impar, mode:PICK
+2026-05-18 17:53:47, EXEC, v:1, k:fup@impar, mode:FULL, rate:0, size:5
+2026-05-18 17:53:44, MOVE, v:1, k:fup@impar, mode:EDIT
+2026-05-18 17:53:44, MOVE, v:1, k:fup@impar, mode:EDIT
+2026-05-18 17:53:47, MOVE, v:1, k:fup@impar, mode:EDIT

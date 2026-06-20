@@ -1,0 +1,27 @@
+2026-05-22 02:13:02, MOVE, v:1, k:fup@round, mode:PICK
+2026-05-22 02:13:04, EXEC, v:1, k:fup@round, mode:FULL, rate:100
+2026-05-22 02:13:05, MOVE, v:1, k:fup@round, mode:BACK
+2026-05-22 02:13:21, SELF, v:1, k:fup@round, self:1, rate:100, study:30
+2026-05-22 02:13:25, MOVE, v:1, k:fup@mumia, mode:DOWN
+2026-05-22 02:13:25, MOVE, v:1, k:fup@mumia, mode:PICK
+2026-05-22 02:13:27, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0, size:5
+2026-05-22 02:13:04, MOVE, v:1, k:fup@round, mode:EDIT
+2026-05-22 02:13:25, MOVE, v:1, k:fup@mumia, mode:EDIT
+2026-05-22 02:13:25, MOVE, v:1, k:fup@mumia, mode:EDIT
+2026-05-22 02:17:50, MOVE, v:1, k:fup@mumia, mode:EDIT
+2026-05-22 02:13:27, MOVE, v:1, k:fup@mumia, mode:EDIT
+2026-05-22 02:22:43, MOVE, v:1, k:fup@mumia, mode:EDIT
+2026-05-22 02:24:38, EXEC, v:1, k:fup@mumia, mode:FULL, rate:22, size:22
+2026-05-22 02:25:12, EXEC, v:1, k:fup@mumia, mode:FULL, rate:22
+2026-05-22 02:25:27, EXEC, v:1, k:fup@mumia, mode:FULL, rate:22
+2026-05-22 02:25:51, EXEC, v:1, k:fup@mumia, mode:FULL, rate:22
+2026-05-22 02:27:43, MOVE, v:1, k:fup@mumia, mode:EDIT
+2026-05-22 02:25:51, MOVE, v:1, k:fup@mumia, mode:EDIT
+2026-05-22 02:28:36, EXEC, v:1, k:fup@mumia, mode:FULL, rate:0, size:22
+2026-05-22 02:28:47, EXEC, v:1, k:fup@mumia, mode:FULL, rate:22, size:22
+2026-05-22 02:31:44, EXEC, v:1, k:fup@mumia, mode:FULL, rate:88, size:21
+2026-05-22 02:32:18, EXEC, v:1, k:fup@mumia, mode:FULL, rate:88
+2026-05-22 02:32:27, EXEC, v:1, k:fup@mumia, mode:FULL, rate:100, size:21
+2026-05-22 02:32:51, SELF, v:1, k:fup@mumia, self:1, rate:100, study:20
+2026-05-22 02:32:26, MOVE, v:1, k:fup@mumia, mode:EDIT
+2026-05-22 02:32:27, MOVE, v:1, k:fup@mumia, mode:EDIT

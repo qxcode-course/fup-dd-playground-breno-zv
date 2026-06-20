@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-13_12-46-23",
+            "content": "@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,206 +37,38 @@\n ) %7B%0A\n-%09var a, b int64%0A%09fmt.Scan(&a, &b)%0A%09fmt.Print(%22%5B%22)%0A%0A%09for %7B%0A%09%09if a %3E= b %7B%0A%09%09%09break%0A%09%09%7D%0A%09%09if a%252 == 0 %7B%0A%09%09%09a++%0A%09%09%09continue%0A%09%09%7D%0A%09%09fmt.Print(a)%0A%09%09if a+2 %3C b %7B%0A%09%09%09fmt.Print(%22 %22)%0A%09%09%7D%0A%09%09a++%0A%09%7D%0A%09fmt.Print(%22%5D\n+    fmt.Println(%22Hello, World!\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-13_15-00-25",
+            "content": "@@ -81,17 +81,16 @@\n Print(%22%5B\n- \n %22)%0A%0A%09for\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-13_15-00-46",
+            "content": "@@ -232,15 +232,14 @@\n .Print(%22\n- \n %5D%22)%0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-13_15-00-51",
+            "content": "@@ -238,10 +238,8 @@\n (%22 %5D\n-%5Cn\n %22)%0A%7D\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-13_15-01-00",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n\tvar a, b int64\n\tfmt.Scan(&a, &b)\n\tfmt.Print(\"[ \")\n\n\tfor {\n\t\tif a >= b {\n\t\t\tbreak\n\t\t}\n\t\tif a%2 == 0 {\n\t\t\ta++\n\t\t\tcontinue\n\t\t}\n\t\tfmt.Print(a)\n\t\tif a+2 < b {\n\t\t\tfmt.Print(\" \")\n\t\t}\n\t\ta++\n\t}\n\tfmt.Print(\" ]\\n\")\n}\n",
+            "lines": "24"
+        }
+    ]
+}

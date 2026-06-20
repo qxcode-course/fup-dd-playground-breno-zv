@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_04-42-49",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar idade, filhos int\n\n\tfmt.Scanln(&idade)\n\tfmt.Scanln(&filhos)\n\n\tfor i := 0; i < filhos; i++ {\n\t\tfmt.Println(idade+2*i)\n\t}\n}\n",
+            "lines": "12"
+        }
+    ]
+}

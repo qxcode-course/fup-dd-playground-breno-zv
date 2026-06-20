@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_04-11-57",
+            "content": "@@ -220,10 +220,8 @@\n C-1)\n-/C\n %0A%09fm\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-16_04-12-47",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar C, bananas, goiabas, mangas, total int\n\n\tfmt.Scanln(&C)\n\tfmt.Scanln(&bananas)\n\tfmt.Scanln(&goiabas)\n\tfmt.Scanln(&mangas)\n\n\ttotal = bananas+goiabas+mangas\n\n\tminutos := (total+C-1)/C\n\tfmt.Println(minutos)\n}\n",
+            "lines": "15"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+2026-05-25 16:47:29, MOVE, v:1, k:fup@meio, mode:DOWN
+2026-05-25 16:47:30, MOVE, v:1, k:fup@meio, mode:PICK
+2026-05-25 16:47:29, MOVE, v:1, k:fup@meio, mode:EDIT
+2026-05-25 16:47:29, MOVE, v:1, k:fup@meio, mode:EDIT
+2026-05-25 16:52:18, MOVE, v:1, k:fup@meio, mode:EDIT
+2026-05-25 16:53:48, EXEC, v:1, k:fup@meio, mode:FULL, rate:0, size:17
+2026-05-25 16:54:21, EXEC, v:1, k:fup@meio, mode:FULL, rate:70, size:17
+2026-05-25 16:55:25, EXEC, v:1, k:fup@meio, mode:FULL, rate:100, size:17
+2026-05-25 16:57:09, SELF, v:1, k:fup@meio, self:1, rate:100, study:10
+2026-05-25 16:55:25, MOVE, v:1, k:fup@meio, mode:EDIT
+2026-05-25 16:55:25, MOVE, v:1, k:fup@meio, mode:EDIT

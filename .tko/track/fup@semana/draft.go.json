@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_03-28-03",
+            "content": "@@ -137,20 +137,18 @@\n  %3C= 6 %7B%0A\n-    \n+%09%09\n if (hora\n@@ -165,17 +165,17 @@\n ora %3C= 1\n-1\n+0\n ) %7C%7C (ho\n@@ -200,24 +200,19 @@\n = 17) %7B%0A\n-        \n+%09%09%09\n trabalha\n@@ -226,17 +226,16 @@\n rue%0A\n-    \n+%09%09\n %7D%0A\n+%09\n %7D%0A\n-%0A\n+%09\n if d\n@@ -244,20 +244,18 @@\n  == 7 %7B%0A\n-    \n+%09%09\n if hora \n@@ -275,20 +275,15 @@\n %3C= 1\n-1 %7B%0A        \n+0 %7B%0A%09%09%09\n trab\n@@ -301,14 +301,13 @@\n rue%0A\n-    \n+%09%09\n %7D%0A\n+%09\n %7D%0A%09i\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-16_03-29-45",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar dia, hora int\n\n\tfmt.Scan(&dia)\n\tfmt.Scan(&hora)\n\n\ttrabalhando := false\n\n\tif dia >= 2 && dia <= 6 {\n    if (hora >= 8 && hora <= 11) || (hora >= 14 && hora <= 17) {\n        trabalhando = true\n    }\n}\n\nif dia == 7 {\n    if hora >= 8 && hora <= 11 {\n        trabalhando = true\n    }\n}\n\tif trabalhando {\n\t\tfmt.Println(\"SIM\")\n\t} else {\n\t\tfmt.Println(\"NAO\")\n\t}\n}\n",
+            "lines": "27"
+        }
+    ]
+}

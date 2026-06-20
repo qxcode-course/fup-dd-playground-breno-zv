@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_04-32-03",
+            "content": "@@ -185,30 +185,8 @@\n  0%7B%0A\n-            soma += i%0A\n %09%09%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-16_04-32-17",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar A, B int\n\n\tfmt.Scanln(&A)\n\tfmt.Scanln(&B)\n\n\tif A>B{\n\t\tfmt.Println(\"invalido\")\n\t\treturn\n\t}\n\tsoma := 0\n\tfor i := A; i <= B; i++ {\n\t\tif i%2 == 0{\n            soma += i\n\t\t}\n\t}\n\tfmt.Println(soma)\n}\n",
+            "lines": "20"
+        }
+    ]
+}

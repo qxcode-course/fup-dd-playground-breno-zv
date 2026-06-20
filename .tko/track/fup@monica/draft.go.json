@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_04-02-13",
+            "content": "package main\nimport \"fmt\"\nfunc main(){\n\tvar M, A, B int\n\n\tfmt.Scanln(&M)\n\tfmt.Scanln(&A)\n\tfmt.Scanln(&B)\n\n\tC := M - A - B\n\n\tmaior := A\n\n\tif B > maior{\n\t\tmaior = B\n\t}\n\tif C > maior {\n\t\tmaior = C\n\t}\n\tfmt.Println(maior)\n}\n",
+            "lines": "21"
+        }
+    ]
+}

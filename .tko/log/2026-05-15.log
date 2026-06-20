@@ -1,0 +1,59 @@
+2026-05-15 01:47:21, MOVE, v:1, k:fup@calc, mode:DOWN
+2026-05-15 01:47:23, MOVE, v:1, k:fup@calc, mode:PICK
+2026-05-15 01:47:24, EXEC, v:1, k:fup@calc, mode:FULL, rate:0, size:5
+2026-05-15 01:51:54, EXEC, v:1, k:fup@calc, mode:FULL, rate:100, size:21
+2026-05-15 01:47:21, MOVE, v:1, k:fup@calc, mode:EDIT
+2026-05-15 01:47:21, MOVE, v:1, k:fup@calc, mode:EDIT
+2026-05-15 01:51:30, MOVE, v:1, k:fup@calc, mode:EDIT
+2026-05-15 01:51:54, MOVE, v:1, k:fup@calc, mode:EDIT
+2026-05-15 01:52:15, SELF, v:1, k:fup@calc, self:1, rate:100, study:5
+2026-05-15 01:52:30, MOVE, v:1, k:fup@calc, mode:BACK
+2026-05-15 01:52:36, MOVE, v:1, k:fup@guarda, mode:DOWN
+2026-05-15 01:52:37, MOVE, v:1, k:fup@guarda, mode:PICK
+2026-05-15 01:52:38, EXEC, v:1, k:fup@guarda, mode:FULL, rate:0, size:5
+2026-05-15 01:52:36, MOVE, v:1, k:fup@guarda, mode:EDIT
+2026-05-15 01:52:36, MOVE, v:1, k:fup@guarda, mode:EDIT
+2026-05-15 01:55:26, MOVE, v:1, k:fup@guarda, mode:EDIT
+2026-05-15 01:52:38, MOVE, v:1, k:fup@guarda, mode:EDIT
+2026-05-15 01:57:09, EXEC, v:1, k:fup@guarda, mode:FULL, rate:85, size:21
+2026-05-15 01:57:30, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100, size:21
+2026-05-15 01:57:46, SELF, v:1, k:fup@guarda, self:1, rate:100, study:10, concept:1
+2026-05-15 01:57:47, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100
+2026-05-15 01:57:48, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100
+2026-05-15 01:57:48, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100
+2026-05-15 01:57:49, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100
+2026-05-15 01:57:49, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100
+2026-05-15 01:57:50, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100
+2026-05-15 01:57:50, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100
+2026-05-15 01:57:50, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100
+2026-05-15 01:57:51, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100
+2026-05-15 01:57:51, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100
+2026-05-15 01:57:51, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100
+2026-05-15 01:57:52, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100
+2026-05-15 01:57:52, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100
+2026-05-15 01:57:52, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100
+2026-05-15 01:57:53, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100
+2026-05-15 01:57:53, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100
+2026-05-15 01:57:53, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100
+2026-05-15 01:57:54, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100
+2026-05-15 01:57:54, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100
+2026-05-15 01:57:54, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100
+2026-05-15 01:57:55, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100
+2026-05-15 01:57:55, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100
+2026-05-15 01:57:55, EXEC, v:1, k:fup@guarda, mode:FULL, rate:100
+2026-05-15 01:57:55, MOVE, v:1, k:fup@guarda, mode:BACK
+2026-05-15 01:57:59, MOVE, v:1, k:fup@quantos, mode:DOWN
+2026-05-15 02:00:58, MOVE, v:1, k:fup@quantos, mode:PICK
+2026-05-15 02:01:00, EXEC, v:1, k:fup@quantos, mode:FULL, rate:37, size:17
+2026-05-15 02:01:10, EXEC, v:1, k:fup@quantos, mode:FULL, rate:100, size:17
+2026-05-15 01:57:55, MOVE, v:1, k:fup@guarda, mode:EDIT
+2026-05-15 01:57:29, MOVE, v:1, k:fup@guarda, mode:EDIT
+2026-05-15 01:57:59, MOVE, v:1, k:fup@quantos, mode:EDIT
+2026-05-15 01:57:59, MOVE, v:1, k:fup@quantos, mode:EDIT
+2026-05-15 02:01:08, MOVE, v:1, k:fup@quantos, mode:EDIT
+2026-05-15 02:01:10, MOVE, v:1, k:fup@quantos, mode:EDIT
+2026-05-15 02:02:34, SELF, v:1, k:fup@quantos, self:1, rate:100, study:5
+2026-05-15 02:04:00, SELF, v:1, k:fup@quantos, self:1, rate:100, study:5
+2026-05-15 02:04:21, EXEC, v:1, k:fup@quantos, mode:FREE
+2026-05-15 02:05:12, MOVE, v:1, k:fup@quantos, mode:BACK
+2026-05-15 02:04:51, MOVE, v:1, k:fup@quantos, mode:EDIT

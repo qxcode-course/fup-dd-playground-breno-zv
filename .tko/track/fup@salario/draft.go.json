@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_04-22-28",
+            "content": "@@ -217,10 +217,8 @@\n %25.2f\n-%5Cn\n %22, s\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-16_04-22-46",
+            "content": "@@ -171,55 +171,8 @@\n .15%0A\n-%09%7Delse if salario %3C 2000.00%7B%0A%09%09salario *= 1.10%0A\n %09%7Del\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-16_04-22-57",
+            "content": "@@ -189,9 +189,9 @@\n rio \n-%3E\n+%3C\n  200\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-16_04-23-06",
+            "content": "@@ -185,18 +185,17 @@\n salario \n-%3C=\n+%3E\n  2000.00\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-16_04-26-41",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar salario float64\n\n\tfmt.Scanln(&salario)\n\tif salario <= 1000.00{\n\t\tsalario *= 1.20\n\t}else if salario <= 1500.00{\n\t\tsalario *= 1.15\n\t}else if salario <= 2000.00{\n\t\tsalario *= 1.10\n\t}else{\n\t\tsalario *= 1.05\n\t}\n\tfmt.Printf(\"%.2f\\n\", salario)\n}\n",
+            "lines": "17"
+        }
+    ]
+}

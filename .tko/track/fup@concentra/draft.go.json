@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-20_14-18-36",
+            "content": "@@ -79,17 +79,16 @@\n Print(%22%5B\n- \n %22)%0A%09prim\n@@ -291,15 +291,14 @@\n .Print(%22\n- \n %5D%22)%0A%7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-20_14-18-47",
+            "content": "@@ -79,17 +79,16 @@\n Print(%22%5B\n- \n  %22)%0A%09pri\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-20_14-18-56",
+            "content": "@@ -79,16 +79,17 @@\n Print(%22%5B\n+ \n  %22)%0A%09pri\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-20_14-19-08",
+            "content": "@@ -298,10 +298,8 @@\n (%22 %5D\n-%5Cn\n %22)%0A%7D\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-20_14-19-15",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar a, b int\n\n\tfmt.Scan(&a, &b)\n\tfmt.Print(\"[ \")\n\tprimeiro := true\n\tinicio := a\n\tfim := b\n\n\tfor inicio <= b {\n\t\tif !primeiro {\n\t\t\tfmt.Print(\" \")\n\t\t}\n\n\t\tfmt.Print(inicio)\n\t\tfmt.Print(\" \")\n\t\tfmt.Print(fim)\n\n\t\tprimeiro = false\n\t\tinicio++\n\t\tfim--\n\t}\n\tfmt.Print(\" ]\\n\")\n}\n",
+            "lines": "26"
+        }
+    ]
+}

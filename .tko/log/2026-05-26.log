@@ -1,0 +1,31 @@
+2026-05-26 17:23:19, MOVE, v:1, k:fup@jokenpo, mode:DOWN
+2026-05-26 17:23:20, MOVE, v:1, k:fup@jokenpo, mode:PICK
+2026-05-26 17:23:19, MOVE, v:1, k:fup@jokenpo, mode:EDIT
+2026-05-26 17:23:19, MOVE, v:1, k:fup@jokenpo, mode:EDIT
+2026-05-26 17:26:41, MOVE, v:1, k:fup@jokenpo, mode:EDIT
+2026-05-26 17:37:04, MOVE, v:1, k:fup@jokenpo, mode:EDIT
+2026-05-26 17:42:01, MOVE, v:1, k:fup@jokenpo, mode:EDIT
+2026-05-26 17:44:24, EXEC, v:1, k:fup@jokenpo, mode:FULL, rate:37, size:17
+2026-05-26 17:45:04, EXEC, v:1, k:fup@jokenpo, mode:FULL, rate:37, size:17
+2026-05-26 17:46:43, EXEC, v:1, k:fup@jokenpo, mode:FULL, rate:37, size:21
+2026-05-26 17:46:42, MOVE, v:1, k:fup@jokenpo, mode:EDIT
+2026-05-26 17:46:43, MOVE, v:1, k:fup@jokenpo, mode:EDIT
+2026-05-26 17:51:43, MOVE, v:1, k:fup@jokenpo, mode:EDIT
+2026-05-26 17:53:11, EXEC, v:1, k:fup@jokenpo, mode:FULL, rate:100, size:20
+2026-05-26 17:53:20, EXEC, v:1, k:fup@jokenpo, mode:FULL, rate:100, size:18
+2026-05-26 17:53:22, EXEC, v:1, k:fup@jokenpo, mode:FULL, rate:100
+2026-05-26 17:53:22, EXEC, v:1, k:fup@jokenpo, mode:FULL, rate:100
+2026-05-26 17:53:23, EXEC, v:1, k:fup@jokenpo, mode:FULL, rate:100
+2026-05-26 17:53:23, EXEC, v:1, k:fup@jokenpo, mode:FULL, rate:100
+2026-05-26 17:53:17, MOVE, v:1, k:fup@jokenpo, mode:EDIT
+2026-05-26 17:53:23, MOVE, v:1, k:fup@jokenpo, mode:EDIT
+2026-05-26 18:02:25, MOVE, v:1, k:fup@jokenpo, mode:BACK
+2026-05-26 18:03:29, SELF, v:1, k:fup@jokenpo, self:1, rate:100, study:20
+2026-05-26 18:03:31, MOVE, v:1, k:fup@jokenpo, mode:PICK
+2026-05-26 18:03:33, EXEC, v:1, k:fup@jokenpo, mode:FULL, rate:100
+2026-05-26 18:03:36, MOVE, v:1, k:fup@jokenpo, mode:BACK
+2026-05-26 18:03:50, MOVE, v:1, k:fup@bala, mode:PICK
+2026-05-26 18:03:52, EXEC, v:1, k:fup@bala, mode:FULL, rate:0
+2026-05-26 18:03:33, MOVE, v:1, k:fup@jokenpo, mode:EDIT
+2026-05-26 18:03:52, MOVE, v:1, k:fup@bala, mode:EDIT
+2026-05-26 18:08:04, MOVE, v:1, k:fup@bala, mode:BACK

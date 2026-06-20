@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-12_16-53-49",
+            "content": "@@ -37,139 +37,39 @@\n ) %7B%0A\n-%09var a, b int%0A%0A%09fmt.Scan(&a, &b)%0A%09fmt.Printf(%22%5B%22)%0A%0A%09    for i := a; i %3E b; i++ %7B%0A%09%09    fmt.Printf(%22 %25d%22, i)%0A%09%09%7D%0A%09fmt.Printf(%22 %5D%5Cn\n+    fmt.Println(%22Hello, World!\n %22)%0A\n-%0A\n %7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-12_16-59-38",
+            "content": "@@ -47,16 +47,17 @@\n , b int%0A\n+%0A\n %09fmt.Sca\n@@ -80,16 +80,17 @@\n rint\n+f\n (%22%5B%22)%0A%0A%09\n if a\n@@ -89,21 +89,12 @@\n )%0A%0A%09\n-if a %3C b %7B%0A%09%09\n+    \n for \n@@ -107,9 +107,9 @@\n ; i \n-%3C\n+%3E\n  b; \n@@ -120,74 +120,12 @@\n %7B%0A%09%09\n-%09fmt.Printf(%22 %25d%22, i)%0A%09%09%7D%0A%09%7D else %7B%0A%09%09for i := a; i %3E b; i-- %7B%0A%09%09%09\n+    \n fmt.\n@@ -149,12 +149,8 @@\n %09%09%7D%0A\n-%09%7D%0A%0A\n %09fmt\n@@ -159,15 +159,17 @@\n rint\n-ln\n+f\n (%22 %5D\n+%5Cn\n %22)%0A\n+%0A\n %7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-12_17-24-51",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar a, b int\n\tfmt.Scan(&a, &b)\n\tfmt.Print(\"[\")\n\n\tif a < b {\n\t\tfor i := a; i < b; i++ {\n\t\t\tfmt.Printf(\" %d\", i)\n\t\t}\n\t} else {\n\t\tfor i := a; i > b; i-- {\n\t\t\tfmt.Printf(\" %d\", i)\n\t\t}\n\t}\n\n\tfmt.Println(\" ]\")\n}\n",
+            "lines": "19"
+        }
+    ]
+}

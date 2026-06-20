@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_03-34-35",
+            "content": "@@ -151,11 +151,12 @@\n ln(%22\n-Tru\n+Fals\n e%22)%0A\n@@ -176,25 +176,24 @@\n mt.Println(%22\n-Fals\n+Tru\n e%22)%0A%09%7D%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-16_03-34-57",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar a, b, c int\n\n\tfmt.Scan(&a)\n\tfmt.Scan(&b)\n\tfmt.Scan(&c)\n\n\tif a < b+c && b < a+c && c < a+b {\n\t\tfmt.Println(\"True\")\n\t} else {\n\t\tfmt.Println(\"False\")\n\t}\n}\n",
+            "lines": "17"
+        }
+    ]
+}

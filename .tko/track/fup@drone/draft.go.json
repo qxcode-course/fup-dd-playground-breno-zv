@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_04-02-31",
+            "content": "@@ -28,331 +28,48 @@\n unc \n-cabe(x, y, h, l int) bool %7B%0A%09return (x %3C= h && y %3C= l) %7C%7C (x %3C= l && y %3C= h)%0A%7D%0A%0Afunc main() %7B%0A%09var A, B, C int%0A%09var H, L int%0A%0A%09fmt.Scanln(&A)%0A%09fmt.Scanln(&B)%0A%09fmt.Scanln(&C)%0A%09fmt.Scanln(&H)%0A%09fmt.Scanln(&L)%0A%0A%09if cabe(A, B, H, L) %7C%7C%0A%09%09cabe(A, C, H, L) %7C%7C%0A%09%09cabe(B, C, H, L) %7B%0A%09%09fmt.Println(%22S%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22N%22)%0A%09%7D\n+main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-16_04-03-25",
+            "content": "package main\nimport \"fmt\"\nfunc cabe(x, y, h, l int) bool {\n\treturn (x <= h && y <= l) || (x <= l && y <= h)\n}\n\nfunc main() {\n\tvar A, B, C int\n\tvar H, L int\n\n\tfmt.Scanln(&A)\n\tfmt.Scanln(&B)\n\tfmt.Scanln(&C)\n\tfmt.Scanln(&H)\n\tfmt.Scanln(&L)\n\n\tif cabe(A, B, H, L) ||\n\t\tcabe(A, C, H, L) ||\n\t\tcabe(B, C, H, L) {\n\t\tfmt.Println(\"S\")\n\t} else {\n\t\tfmt.Println(\"N\")\n\t}\n}\n",
+            "lines": "24"
+        }
+    ]
+}

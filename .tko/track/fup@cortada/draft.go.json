@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_04-00-45",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar B, T int\n\n\tfmt.Scanln(&B)\n\tfmt.Scanln(&T)\n\n\tif B+T > 160 {\n\t\tfmt.Println(1)\n\t}else if B+T < 160{\n\t\tfmt.Println(2)\n\t}else{\n\t\tfmt.Println(0)\n\t}\n}\n",
+            "lines": "16"
+        }
+    ]
+}
