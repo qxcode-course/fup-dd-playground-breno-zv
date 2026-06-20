@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-20_22-39-03",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar num, menor int\n\n\tfor i := 0; i < 5; i++ {\n\t\tfmt.Scan(&num)\n\n\t\tif i == 0 || num < menor {\n\t\t\tmenor = num\n\t\t}\n\t}\n\n\tfmt.Println(menor)\n}\n",
+            "lines": "15"
+        }
+    ]
+}

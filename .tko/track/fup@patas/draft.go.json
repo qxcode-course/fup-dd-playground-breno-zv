@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-20_22-56-27",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar chico, cebolinha, n int\n\tvar animal string\n\ttotalPatas := 0\n\n\tfmt.Scan(&chico)\n\tfmt.Scan(&cebolinha)\n\tfmt.Scan(&n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&animal)\n\n\t\tswitch animal {\n\t\tcase \"v\", \"c\":\n\t\t\ttotalPatas += 4\n\t\tcase \"g\":\n\t\t\ttotalPatas += 2\n\t\t}\n\t}\n\n\tfmt.Println(totalPatas)\n\n\tdifChico := chico - totalPatas\n\tif difChico < 0 {\n\t\tdifChico = -difChico\n\t}\n\n\tdifCebolinha := cebolinha - totalPatas\n\tif difCebolinha < 0 {\n\t\tdifCebolinha = -difCebolinha\n\t}\n\n\tif difChico < difCebolinha {\n\t\tfmt.Println(\"Chico Bento\")\n\t} else if difCebolinha < difChico {\n\t\tfmt.Println(\"Cebolinha\")\n\t} else {\n\t\tfmt.Println(\"empate\")\n\t}\n}\n",
+            "lines": "42"
+        }
+    ]
+}

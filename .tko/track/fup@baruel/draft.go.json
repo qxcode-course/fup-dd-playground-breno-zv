@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-20_23-16-24",
+            "content": "@@ -53,17 +53,16 @@\n qtd int%0A\n-%0A\n %09fmt.Sca\n@@ -125,58 +125,58 @@\n +1)%0A\n-%0A%09ultimo := -1%0A%09primeiro := true%0A%0A%09fmt.Print(%22%5B %22)\n+%09repetiu := false%0A%09faltou := false%0A%0A%09ultimo := -1%0A\n %0A%09fo\n@@ -255,33 +255,31 @@\n imo %7B%0A%09%09%09if \n-!primeiro\n+repetiu\n  %7B%0A%09%09%09%09fmt.P\n@@ -310,39 +310,37 @@\n int(fig)%0A%09%09%09\n-primeiro = fals\n+repetiu = tru\n e%0A%09%09%7D%0A%0A%09%09pos\n@@ -369,24 +369,25 @@\n mo = fig%0A%09%7D%0A\n+%0A\n %09fmt.Println\n@@ -391,48 +391,10 @@\n tln(\n-%22 %5D%22)%0A%0A%09fmt.Print(%22%5B %22)%0A%09primeiro = true\n+)%0A\n %0A%09fo\n@@ -449,17 +449,14 @@\n %09if \n-!primeiro\n+faltou\n  %7B%0A%09\n@@ -501,23 +501,20 @@\n %0A%09%09%09\n-primeiro = fals\n+faltou = tru\n e%0A%09%09\n@@ -518,16 +518,17 @@\n %0A%09%09%7D%0A%09%7D%0A\n+%0A\n %09fmt.Pri\n@@ -536,12 +536,8 @@\n tln(\n-%22 %5D%22\n )%0A%7D%0A\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-06-20_23-17-51",
+            "content": "@@ -580,14 +580,15 @@\n rintln(%22\n+ \n %5D%22)%0A%7D%0A\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-06-20_23-18-15",
+            "content": "@@ -411,16 +411,17 @@\n Print(%22%5B\n+ \n %22)%0A%09prim\n@@ -576,19 +576,18 @@\n mt.Println(%22\n- \n %5D%22)%0A%7D%0A\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-06-20_23-18-22",
+            "content": "@@ -392,16 +392,17 @@\n rintln(%22\n+ \n %5D%22)%0A%0A%09fm\n@@ -407,25 +407,24 @@\n fmt.Print(%22%5B\n- \n %22)%0A%09primeiro\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-06-20_23-18-30",
+            "content": "@@ -169,16 +169,17 @@\n Print(%22%5B\n+ \n %22)%0A%09for \n@@ -388,25 +388,24 @@\n mt.Println(%22\n- \n %5D%22)%0A%0A%09fmt.Pr\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-06-20_23-18-39",
+            "content": "@@ -165,25 +165,24 @@\n fmt.Print(%22%5B\n- \n %22)%0A%09for i :=\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-06-20_23-18-43",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -53,16 +53,17 @@\n qtd int%0A\n+%0A\n %09fmt.Sca\n@@ -74,18 +74,28 @@\n otal\n-, \n+)%0A%09fmt.Scan(\n &qtd)%0A%0A%09\n freq\n@@ -90,20 +90,22 @@\n &qtd)%0A%0A%09\n-freq\n+possui\n  := make\n@@ -107,19 +107,20 @@\n  make(%5B%5D\n-int\n+bool\n , total+\n@@ -128,76 +128,38 @@\n )%0A%0A%09\n-for i := 0; i %3C qtd; i++ %7B%0A%09%09var x int%0A%09%09fmt.Scan(&x)%0A%09%09freq%5Bx%5D++%0A%09%7D\n+ultimo := -1%0A%09primeiro := true\n %0A%0A%09f\n@@ -173,34 +173,16 @@\n t(%22%5B %22)%0A\n-%09primeiro := true%0A\n %09for i :\n@@ -179,37 +179,34 @@\n )%0A%09for i := \n-1\n+0\n ; i %3C\n-= total\n+ qtd\n ; i++ %7B%0A%09%09if\n@@ -207,22 +207,56 @@\n %7B%0A%09%09\n-if freq%5Bi%5D %3E 1\n+var fig int%0A%09%09fmt.Scan(&fig)%0A%0A%09%09if fig == ultimo\n  %7B%0A%09\n@@ -301,33 +301,35 @@\n %09%7D%0A%09%09%09fmt.Print(\n-i\n+fig\n )%0A%09%09%09primeiro = \n@@ -329,32 +329,69 @@\n eiro = false%0A%09%09%7D\n+%0A%0A%09%09possui%5Bfig%5D = true%0A%09%09ultimo = fig\n %0A%09%7D%0A%09fmt.Println\n@@ -472,20 +472,18 @@\n %09if \n-freq%5Bi%5D == 0\n+!possui%5Bi%5D\n  %7B%0A%09\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-06-20_23-20-25",
+            "content": "@@ -75,28 +75,18 @@\n otal\n-)%0A%09fmt.Scan(\n+, \n &qtd)%0A%0A%09\n poss\n@@ -81,22 +81,20 @@\n &qtd)%0A%0A%09\n-possui\n+freq\n  := make\n@@ -100,12 +100,11 @@\n e(%5B%5D\n-bool\n+int\n , to\n@@ -114,72 +114,8 @@\n +1)%0A\n-%09repetiu := false%0A%09faltou := false%0A%0A%09ultimo := -1%0A%0A%09// Repetidas\n %0A%09fo\n@@ -145,19 +145,17 @@\n %7B%0A%09%09var \n-fig\n+x\n  int%0A%09%09f\n@@ -167,48 +167,127 @@\n an(&\n-fig)%0A%0A%09%09if fig == ultimo\n+x)%0A%09%09freq%5Bx%5D++%0A%09%7D%0A%0A%09fmt.Print(%22%5B %22)%0A%09primeiro := true%0A%09for i := 1; i %3C= total; i++\n  %7B%0A\n-%09\n %09%09if \n+f\n re\n-petiu\n+q%5Bi%5D %3E 1 %7B%0A%09%09%09if !primeiro\n  %7B%0A%09\n@@ -326,104 +326,91 @@\n int(\n-fig\n+i\n )%0A%09%09%09\n-repetiu = true%0A%09%09%7D%0A%0A%09%09possui%5Bfig%5D = true%0A%09%09ultimo = fig%0A%09%7D%0A%0A%09fmt.Println()%0A%0A%09// Faltando\n+primeiro = false%0A%09%09%7D%0A%09%7D%0A%09fmt.Println(%22 %5D%22)%0A%0A%09fmt.Print(%22%5B %22)%0A%09primeiro = true\n %0A%09fo\n@@ -446,33 +446,38 @@\n %09if \n-!possui%5Bi%5D %7B%0A%09%09%09if faltou\n+freq%5Bi%5D == 0 %7B%0A%09%09%09if !primeiro\n  %7B%0A%09\n@@ -522,20 +522,23 @@\n %0A%09%09%09\n-faltou = tru\n+primeiro = fals\n e%0A%09%09\n@@ -538,25 +538,24 @@\n alse%0A%09%09%7D%0A%09%7D%0A\n-%0A\n %09fmt.Println\n@@ -555,12 +555,16 @@\n Println(\n+%22 %5D%22\n )%0A%7D%0A\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-06-20_23-21-03",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar total, qtd int\n\tfmt.Scan(&total)\n\tfmt.Scan(&qtd)\n\n\tpossui := make([]bool, total+1)\n\trepetiu := false\n\tfaltou := false\n\n\tultimo := -1\n\n\t// Repetidas\n\tfor i := 0; i < qtd; i++ {\n\t\tvar fig int\n\t\tfmt.Scan(&fig)\n\n\t\tif fig == ultimo {\n\t\t\tif repetiu {\n\t\t\t\tfmt.Print(\" \")\n\t\t\t}\n\t\t\tfmt.Print(fig)\n\t\t\trepetiu = true\n\t\t}\n\n\t\tpossui[fig] = true\n\t\tultimo = fig\n\t}\n\n\tfmt.Println()\n\n\t// Faltando\n\tfor i := 1; i <= total; i++ {\n\t\tif !possui[i] {\n\t\t\tif faltou {\n\t\t\t\tfmt.Print(\" \")\n\t\t\t}\n\t\t\tfmt.Print(i)\n\t\t\tfaltou = true\n\t\t}\n\t}\n\n\tfmt.Println()\n}\n",
+            "lines": "47"
+        }
+    ]
+}

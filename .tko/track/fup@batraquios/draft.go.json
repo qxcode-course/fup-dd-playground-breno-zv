@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-20_23-11-27",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n, m int\n\n\tfmt.Scan(&n)\n\tvetor1 := make([]int, n)\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&vetor1[i])\n\t}\n\n\tfmt.Scan(&m)\n\tvetor2 := make([]int, m)\n\tfor i := 0; i < m; i++ {\n\t\tfmt.Scan(&vetor2[i])\n\t}\n\n\tcontido := true\n\n\tfor i := 0; i < n; i++ {\n\t\tencontrou := false\n\n\t\tfor j := 0; j < m; j++ {\n\t\t\tif vetor1[i] == vetor2[j] {\n\t\t\t\tencontrou = true\n\t\t\t\tbreak\n\t\t\t}\n\t\t}\n\n\t\tif !encontrou {\n\t\t\tcontido = false\n\t\t\tbreak\n\t\t}\n\t}\n\n\tif contido {\n\t\tfmt.Println(\"sim\")\n\t} else {\n\t\tfmt.Println(\"nao\")\n\t}\n}\n",
+            "lines": "43"
+        }
+    ]
+}

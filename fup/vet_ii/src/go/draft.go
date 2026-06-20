@@ -2,23 +2,21 @@ package main
 
 import "fmt"
 
-func mostrar_vetor(arr []int, sep string) {
-    fmt.Print("[ ")
-    for i, valor := range arr {
-        if i != 0 {
-            fmt.Print(sep)
-        }
-        fmt.Printf("%v", valor)
-    }
-    fmt.Print(" ]\n")
-}
-
 func main() {
-    var qtd int
-    fmt.Scan(&qtd)
-    var arr []int = make([]int, qtd)
-    for i := range arr {
-        fmt.Scan(&arr[i])
-    }
-    mostrar_vetor(arr, " ")
+	var n int
+	fmt.Scan(&n)
+
+	vet := make([]int, n)
+
+	for i := 0; i < n; i++ {
+		fmt.Scan(&vet[i])
+	}
+
+	fmt.Print("[ ")
+
+	for i := 0; i < n; i++ {
+		fmt.Print(vet[i], " ")
+	}
+
+	fmt.Println("]")
 }

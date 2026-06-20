@@ -17,8 +17,48 @@
         },
         {
             "label": "2026-04-14_17-15-53",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n\n    arr := []int{9, 8, 4, 5, 6, 2, 3}\n    fmt.Println(\"[ \")\n    for _, valor := range arr{\n    fmt.Printf(\"%d \", valor)\n    }\n    fmt.Print(\" ]\\n\")\n}\n",
+            "content": "@@ -29,45 +29,54 @@\n nc m\n-ostrar_vetor(\n+ain() %7B%0A%0A    \n arr\n+ :=\n  %5B%5Dint\n-, sep string) %7B\n+%7B9, 8, 4, 5, 6, 2, 3%7D\n %0A   \n@@ -89,11 +89,14 @@\n rint\n+ln\n (%22%5B\n+ \n %22)%0A \n@@ -102,17 +102,17 @@\n     for \n-i\n+_\n , valor \n@@ -127,72 +127,10 @@\n  arr\n- \n %7B%0A\n-        if i != 0 %7B%0A            fmt.Print(sep)%0A        %7D%0A    \n     \n@@ -142,17 +142,18 @@\n rintf(%22%25\n-v\n+d \n %22, valor\n@@ -179,185 +179,12 @@\n nt(%22\n+ \n %5D%5Cn\n-%22)%0A%7D%0A%0Afunc main() %7B%0A    var qtd int%0A    fmt.Scan(&qtd)%0A    var arr %5B%5Dint = make(%5B%5Dint, qtd)%0A    for i := range arr %7B%0A        fmt.Scan(&arr%5Bi%5D)%0A    %7D%0A    mostrar_vetor(arr, %22 \n %22)%0A%7D\n",
             "lines": "11"
+        },
+        {
+            "label": "2026-06-20_14-52-46",
+            "content": "@@ -29,97 +29,335 @@\n nc m\n-ain() %7B%0A%09var n int%0A%0A%09fmt.Scan(&n)%0A%0A%09vetor := make(%5B%5Dint, n)%0A%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09\n+ostrar_vetor(arr %5B%5Dint, sep string) %7B%0A    fmt.Print(%22%5B%22)%0A    for i, valor := range arr %7B%0A        if i != 0 %7B%0A            fmt.Print(sep)%0A        %7D%0A        fmt.Printf(%22%25v%22, valor)%0A    %7D%0A    fmt.Print(%22%5D%5Cn%22)%0A%7D%0A%0Afunc main() %7B%0A    var qtd int%0A    fmt.Scan(&qtd)%0A    var arr %5B%5Dint = make(%5B%5Dint, qtd)%0A    for i := range arr %7B%0A        \n fmt.\n@@ -366,73 +366,48 @@\n an(&\n-veto\n+ar\n r%5Bi%5D)%0A\n-%09%7D%0A%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09fmt.Println(vetor%5Bi%5D)%0A%09%7D\n+    %7D%0A    mostrar_vetor(arr, %22 %22)\n %0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-20_14-53-43",
+            "content": "@@ -33,20 +33,17 @@\n ain() %7B%0A\n-    \n+%09\n var n in\n@@ -45,20 +45,17 @@\n  n int%0A%0A\n-    \n+%09\n fmt.Scan\n@@ -60,20 +60,17 @@\n an(&n)%0A%0A\n-    \n+%09\n vetor :=\n@@ -86,20 +86,17 @@\n nt, n)%0A%0A\n-    \n+%09\n for i :=\n@@ -108,32 +108,26 @@\n  %3C n; i++ %7B%0A\n-        \n+%09%09\n fmt.Scan(&ve\n@@ -138,19 +138,13 @@\n i%5D)%0A\n-    %7D%0A%0A    \n+%09%7D%0A%0A%09\n for \n@@ -168,16 +168,10 @@\n + %7B%0A\n-        \n+%09%09\n fmt.\n@@ -192,12 +192,9 @@\n i%5D)%0A\n-    \n+%09\n %7D%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-20_14-54-16",
+            "content": "@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n var n in\n@@ -47,17 +47,21 @@\n r n int%0A\n-%09\n+%0A    \n fmt.Scan\n@@ -70,31 +70,41 @@\n n)%0A%0A\n-%09var\n+   \n  vetor \n-%5B1000%5Dint%0A%0A%09\n+:= make(%5B%5Dint, n)%0A%0A    \n for \n@@ -120,26 +120,32 @@\n  %3C n; i++ %7B%0A\n-%09%09\n+        \n fmt.Scan(&ve\n@@ -156,13 +156,19 @@\n i%5D)%0A\n-%09%7D%0A%0A%09\n+    %7D%0A%0A    \n for \n@@ -192,10 +192,16 @@\n + %7B%0A\n-%09%09\n+        \n fmt.\n@@ -222,9 +222,12 @@\n i%5D)%0A\n-%09\n+    \n %7D%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-20_15-02-00",
+            "content": "@@ -83,33 +83,33 @@\n %5Dint%0A%0A%09for i := \n-1\n+0\n ; i %3C n; i++ %7B%0A%09\n@@ -143,17 +143,17 @@\n or i := \n-1\n+0\n ; i %3C n;\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-20_15-02-32",
+            "content": "@@ -83,33 +83,33 @@\n %5Dint%0A%0A%09for i := \n-0\n+1\n ; i %3C n; i++ %7B%0A%09\n@@ -143,17 +143,17 @@\n or i := \n-0\n+1\n ; i %3C n;\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-20_15-02-42",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -65,28 +65,26 @@\n %0A%0A%09v\n-et := make(%5B%5Dint, n)\n+ar vetor %5B1000%5Dint\n %0A%0A%09f\n@@ -122,16 +122,18 @@\n can(&vet\n+or\n %5Bi%5D)%0A%09%7D%0A\n@@ -155,24 +155,24 @@\n  %3C n; i++ %7B%0A\n-\n %09%09fmt.Printl\n@@ -176,16 +176,18 @@\n ntln(vet\n+or\n %5Bi%5D)%0A%09%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-20_15-04-12",
+            "content": "@@ -65,50 +65,8 @@\n n)%0A%0A\n-%09if n == 0 %7B%0A%09%09fmt.Println()%0A%09%09return%0A%09%7D%0A%0A\n %09vet\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-20_15-05-30",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tif n == 0 {\n\t\tfmt.Println()\n\t\treturn\n\t}\n\n\tvet := make([]int, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&vet[i])\n\t}\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Println(vet[i])\n\t}\n}\n",
+            "lines": "23"
         }
     ]
 }

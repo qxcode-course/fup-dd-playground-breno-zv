@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-20_23-01-53",
+            "content": "@@ -345,279 +345,6 @@\n %0A%09%7D%0A\n-%09if chocolate %3E limao %7B%0A%09%09fmt.Println(%22chocolate%22)%0A%09%7D else if limao %3E chocolate %7B%0A%09%09fmt.Println(%22limao%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22empate%22)%0A%09%7D%0A%0A%09if manha %3C tarde %7B%0A%09%09fmt.Println(%22manha%22)%0A%09%7D else if tarde %3C manha %7B%0A%09%09fmt.Println(%22tarde%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22empate%22)%0A%09%7D%0A\n %7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-20_23-06-29",
+            "content": "@@ -381,19 +381,27 @@\n intln(%22c\n+hocolate\n %22)%0A\n-\n %09%7D else \n@@ -439,16 +439,20 @@\n intln(%22l\n+imao\n %22)%0A%09%7D el\n@@ -520,16 +520,20 @@\n intln(%22m\n+anha\n %22)%0A%09%7D el\n@@ -554,16 +554,16 @@\n manha %7B%0A\n-\n %09%09fmt.Pr\n@@ -570,16 +570,20 @@\n intln(%22t\n+arde\n %22)%0A%09%7D el\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-20_23-09-21",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar n int\n\tvar sabor, turno string\n\tchocolate, limao := 0, 0\n\tmanha, tarde := 0, 0\n\n\tfmt.Scan(&n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&sabor, &turno)\n\n\t\tif sabor == \"c\" {\n\t\t\tchocolate++\n\t\t} else if sabor == \"l\" {\n\t\t\tlimao++\n\t\t}\n\n\t\tif turno == \"m\" {\n\t\t\tmanha++\n\t\t} else if turno == \"t\" {\n\t\t\ttarde++\n\t\t}\n\t}\n\tif chocolate > limao {\n\t\tfmt.Println(\"c\")\n\t} else if limao > chocolate {\n\t\tfmt.Println(\"l\")\n\t} else {\n\t\tfmt.Println(\"empate\")\n\t}\n\n\tif manha < tarde {\n\t\tfmt.Println(\"m\")\n\t} else if tarde < manha {\n\t\tfmt.Println(\"t\")\n\t} else {\n\t\tfmt.Println(\"empate\")\n\t}\n}\n",
+            "lines": "41"
+        }
+    ]
+}

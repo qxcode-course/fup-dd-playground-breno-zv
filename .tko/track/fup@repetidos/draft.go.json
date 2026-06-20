@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-20_23-10-44",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar p, n, num int\n\tcontador := 0\n\n\tfmt.Scan(&p, &n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&num)\n\t\tif num == p {\n\t\t\tcontador++\n\t\t}\n\t}\n\n\tfmt.Println(contador)\n}\n",
+            "lines": "17"
+        }
+    ]
+}
