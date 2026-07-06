@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_02-23-28",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc ehVogal(c byte) bool {\n\treturn c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'\n}\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\tfrase, _ := reader.ReadString('\\n')\n\tfrase = strings.TrimRight(frase, \"\\r\\n\")\n\n\tvogais := \"\"\n\tconsoantes := \"\"\n\n\tfor i := 0; i < len(frase); i++ {\n\t\tc := frase[i]\n\n\t\tif c == ' ' {\n\t\t\tcontinue\n\t\t}\n\n\t\tif ehVogal(c) {\n\t\t\tvogais += string(c)\n\t\t} else {\n\t\t\tconsoantes += string(c)\n\t\t}\n\t}\n\n\tfmt.Println(vogais)\n\tfmt.Println(consoantes)\n}\n",
+            "lines": "39"
+        }
+    ]
+}

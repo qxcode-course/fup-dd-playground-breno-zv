@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_02-36-50",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\tfrase, _ := reader.ReadString('\\n')\n\tfrase = strings.TrimSpace(frase)\n\n\tpalavras := strings.Fields(frase)\n\n\tordenado := true\n\tfor i := 0; i < len(palavras)-1; i++ {\n\t\tif palavras[i] > palavras[i+1] {\n\t\t\tordenado = false\n\t\t\tbreak\n\t\t}\n\t}\n\n\tif ordenado {\n\t\tfmt.Println(\"sim\")\n\t} else {\n\t\tfmt.Println(\"nao\")\n\t}\n}\n",
+            "lines": "30"
+        }
+    ]
+}

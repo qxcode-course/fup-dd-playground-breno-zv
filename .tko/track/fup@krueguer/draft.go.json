@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_04-06-48",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc ehVogal(c byte) bool {\n\treturn c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'\n}\n\nfunc main() {\n\tin := bufio.NewReader(os.Stdin)\n\n\tvar n int\n\tfmt.Fscan(in, &n)\n\tin.ReadByte() // consome o '\\n'\n\n\tfor ; n > 0; n-- {\n\t\tvar s string\n\t\tfmt.Fscanln(in, &s)\n\n\t\tmelhor := \"\"\n\t\tatual := \"\"\n\n\t\tfor i := 0; i < len(s); i++ {\n\t\t\tif ehVogal(s[i]) {\n\t\t\t\tatual += string(s[i])\n\t\t\t} else {\n\t\t\t\tif len(atual) > len(melhor) {\n\t\t\t\t\tmelhor = atual\n\t\t\t\t}\n\t\t\t\tatual = \"\"\n\t\t\t}\n\t\t}\n\n\t\t// verifica a \u00faltima sequ\u00eancia\n\t\tif len(atual) > len(melhor) {\n\t\t\tmelhor = atual\n\t\t}\n\n\t\tfmt.Println(melhor)\n\t}\n}\n",
+            "lines": "45"
+        }
+    ]
+}

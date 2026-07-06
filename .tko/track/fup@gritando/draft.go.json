@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_02-24-45",
+            "content": "@@ -283,9 +283,9 @@\n 'a' \n-*\n+-\n  'A'\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-07-06_02-24-52",
+            "content": "@@ -279,17 +279,17 @@\n c - 'a' \n-+\n+*\n  'A'%0A%09%09%7D\n@@ -335,17 +335,17 @@\n c - 'A' \n--\n++\n  'a'%0A%09%09%7D\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-07-06_02-25-01",
+            "content": "@@ -335,17 +335,17 @@\n c - 'A' \n-+\n+-\n  'a'%0A%09%09%7D\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-07-06_02-28-39",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\ttexto, _ := reader.ReadString('\\n')\n\ttexto = strings.TrimRight(texto, \"\\r\\n\")\n\n\tfor i := 0; i < len(texto); i++ {\n\t\tc := texto[i]\n\n\t\tif c >= 'a' && c <= 'z' {\n\t\t\tc = c - 'a' + 'A'\n\t\t} else if c >= 'A' && c <= 'Z' {\n\t\t\tc = c - 'A' + 'a'\n\t\t}\n\n\t\tfmt.Printf(\"%c\", c)\n\t}\n\tfmt.Println()\n}\n",
+            "lines": "28"
+        }
+    ]
+}

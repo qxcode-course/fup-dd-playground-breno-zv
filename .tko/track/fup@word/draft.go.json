@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_04-13-13",
+            "content": "@@ -20,20 +20,17 @@\n t (%0A\n-    \n+%09\n %22bufio%22%0A\n     \n@@ -29,31 +29,22 @@\n io%22%0A\n-    \n+%09\n %22fmt%22%0A\n-    \n+%09\n %22os%22%0A\n-    \n+%09\n %22str\n@@ -49,16 +49,27 @@\n trings%22%0A\n+%09%22unicode%22%0A\n )%0A%0Afunc \n@@ -77,20 +77,17 @@\n ain() %7B%0A\n-    \n+%09\n in := bu\n@@ -111,20 +111,17 @@\n Stdin)%0A%0A\n-    \n+%09\n texto, _\n@@ -144,20 +144,17 @@\n g('%5Cn')%0A\n-    \n+%09\n texto = \n@@ -169,165 +169,640 @@\n Trim\n-Space\n+Right\n (texto\n-)%0A%0A    comando, _\n+, %22%5Cr%5Cn%22)%0A%0A%09var op rune%0A%09fmt.Fscan(in, &op)%0A%0A%09switch op %7B%0A%0A%09case 'M': // tudo mai%C3%BAsculo%0A%09%09for _, c\n  := \n-in.ReadString('%5Cn')%0A    comando = strings.TrimSpace(comando)%0A%0A    switch comando %7B%0A    case %22M%22:%0A        fmt.Println(\n+range texto %7B%0A%09%09%09fmt.Printf(%22%25c%22, unicode.ToUpper(c))%0A%09%09%7D%0A%0A%09case 'm': // tudo min%C3%BAsculo%0A%09%09for _, c := range texto %7B%0A%09%09%09fmt.Printf(%22%25c%22, unicode.ToLower(c))%0A%09%09%7D%0A%0A%09case 'i': // inverte o case%0A%09%09for _, c := range texto %7B%0A%09%09%09if unicode.IsLower(c) %7B%0A%09%09%09%09fmt.Printf(%22%25c%22, unicode.ToUpper(c))%0A%09%09%09%7D else if unicode.IsUpper(c) %7B%0A%09%09%09%09fmt.Printf(%22%25c%22, unicode.ToLower(c))%0A%09%09%09%7D else %7B%0A%09%09%09%09fmt.Printf(%22%25c%22, c)%0A%09%09%09%7D%0A%09%09%7D%0A%0A%09case 'p': // primeira letra de cada palavra mai%C3%BAscula,%0A%09%09// exceto palavras de uma letra%0A%09%09palavras := \n strings.\n ToUp\n@@ -801,87 +801,301 @@\n ngs.\n-ToUpper\n+Fields\n (texto)\n-)\n %0A%0A\n-    case %22m%22:%0A        fmt.Println(strings.ToLower(texto))%0A    %7D\n+%09%09for i, p := range palavras %7B%0A%09%09%09if len(%5B%5Drune(p)) == 1 %7B%0A%09%09%09%09fmt.Print(strings.ToLower(p))%0A%09%09%09%7D else %7B%0A%09%09%09%09r := %5B%5Drune(strings.ToLower(p))%0A%09%09%09%09r%5B0%5D = unicode.ToUpper(r%5B0%5D)%0A%09%09%09%09fmt.Print(string(r))%0A%09%09%09%7D%0A%0A%09%09%09if i %3C len(palavras)-1 %7B%0A%09%09%09%09fmt.Print(%22 %22)%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%0A%09fmt.Println()\n %0A%7D%0A\n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-07-06_04-15-07",
+            "content": "package main\n\nimport (\n    \"bufio\"\n    \"fmt\"\n    \"os\"\n    \"strings\"\n)\n\nfunc main() {\n    in := bufio.NewReader(os.Stdin)\n\n    texto, _ := in.ReadString('\\n')\n    texto = strings.TrimSpace(texto)\n\n    comando, _ := in.ReadString('\\n')\n    comando = strings.TrimSpace(comando)\n\n    switch comando {\n    case \"M\":\n        fmt.Println(strings.ToUpper(texto))\n\n    case \"m\":\n        fmt.Println(strings.ToLower(texto))\n    }\n}\n",
+            "lines": "26"
+        }
+    ]
+}

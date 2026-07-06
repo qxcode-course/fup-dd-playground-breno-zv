@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_02-34-29",
+            "content": "@@ -480,56 +480,46 @@\n %09// \n-pula todas as vogais iniciais da pr%C3%B3xima palavra\n+elimina a sequ%C3%AAncia cont%C3%ADnua de vogais\n %0A%09%09%09\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-07-06_02-35-47",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc vogal(c byte) bool {\n\treturn c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'\n}\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\tlinha, _ := reader.ReadString('\\n')\n\tlinha = strings.TrimSpace(linha)\n\n\tpalavras := strings.Fields(linha)\n\n\tif len(palavras) == 0 {\n\t\treturn\n\t}\n\n\tresp := palavras[0]\n\n\tfor i := 1; i < len(palavras); i++ {\n\t\tp := palavras[i]\n\n\t\tif vogal(resp[len(resp)-1]) && vogal(p[0]) {\n\t\t\t// pula todas as vogais iniciais da pr\u00f3xima palavra\n\t\t\tj := 0\n\t\t\tfor j < len(p) && vogal(p[j]) {\n\t\t\t\tj++\n\t\t\t}\n\t\t\tresp += p[j:]\n\t\t} else {\n\t\t\tresp += \" \" + p\n\t\t}\n\t}\n\n\tfmt.Println(resp)\n}\n",
+            "lines": "43"
+        }
+    ]
+}

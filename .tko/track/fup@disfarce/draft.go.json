@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_02-42-27",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc main() {\n\tin := bufio.NewReader(os.Stdin)\n\n\tvar t int\n\tfmt.Fscan(in, &t)\n\n\tfor ; t > 0; t-- {\n\t\tvar ultron, pessoa string\n\t\tfmt.Fscan(in, &ultron)\n\t\tfmt.Fscan(in, &pessoa)\n\n\t\tultron = strings.ToLower(ultron)\n\t\tpessoa = strings.ToLower(pessoa)\n\n\t\t// conjunto de letras do Ultron\n\t\tm := make(map[byte]bool)\n\t\tfor i := 0; i < len(ultron); i++ {\n\t\t\tm[ultron[i]] = true\n\t\t}\n\n\t\t// conta quantas letras da pessoa aparecem no c\u00f3digo do Ultron\n\t\tcont := 0\n\t\tfor i := 0; i < len(pessoa); i++ {\n\t\t\tif m[pessoa[i]] {\n\t\t\t\tcont++\n\t\t\t}\n\t\t}\n\n\t\tif cont == len(pessoa) {\n\t\t\tfmt.Println(\"chefe\")\n\t\t} else if cont*2 > len(pessoa) {\n\t\t\tfmt.Println(\"ultron\")\n\t\t} else {\n\t\t\tfmt.Println(\"pessoa\")\n\t\t}\n\t}\n}\n",
+            "lines": "46"
+        }
+    ]
+}

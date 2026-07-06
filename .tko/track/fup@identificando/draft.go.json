@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_04-04-19",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n\t\"unicode\"\n)\n\nfunc main() {\n\tin := bufio.NewReader(os.Stdin)\n\tlinha, _ := in.ReadString('\\n')\n\tlinha = strings.TrimSpace(linha)\n\n\tpalavras := strings.Fields(linha)\n\n\tfor i, p := range palavras {\n\t\ttipo := \"int\"\n\n\t\tfor _, c := range p {\n\t\t\tif unicode.IsLetter(c) {\n\t\t\t\ttipo = \"str\"\n\t\t\t\tbreak\n\t\t\t}\n\t\t}\n\n\t\tif tipo != \"str\" {\n\t\t\tfor _, c := range p {\n\t\t\t\tif c == '.' {\n\t\t\t\t\ttipo = \"float\"\n\t\t\t\t\tbreak\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\tif i > 0 {\n\t\t\tfmt.Print(\" \")\n\t\t}\n\t\tfmt.Print(tipo)\n\t}\n\tfmt.Println()\n}\n",
+            "lines": "43"
+        }
+    ]
+}

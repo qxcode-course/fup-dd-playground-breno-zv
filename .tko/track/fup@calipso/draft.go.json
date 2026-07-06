@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_02-47-12",
+            "content": "@@ -185,18 +185,18 @@\n t %3C n; t\n-++\n+--\n  %7B%0A%09%09lin\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-06_03-57-02",
+            "content": "@@ -20,20 +20,17 @@\n t (%0A\n-    \n+%09\n %22bufio%22%0A\n     \n@@ -29,31 +29,22 @@\n io%22%0A\n-    \n+%09\n %22fmt%22%0A\n-    \n+%09\n %22os%22%0A\n-    \n+%09\n %22uni\n@@ -66,20 +66,17 @@\n ain() %7B%0A\n-    \n+%09\n in := bu\n@@ -100,20 +100,17 @@\n Stdin)%0A%0A\n-    \n+%09\n var n in\n@@ -111,20 +111,17 @@\n r n int%0A\n-    \n+%09\n fmt.Fsca\n@@ -130,20 +130,17 @@\n in, &n)%0A\n-    \n+%09\n in.ReadB\n@@ -160,45 +160,44 @@\n ome \n+o \n '%5Cn'%0A%0A\n-    for ; n %3E 0; n-- %7B%0A        \n+%09for t := 0; t %3C n; t++ %7B%0A%09%09\n linh\n@@ -228,207 +228,69 @@\n n')%0A\n-        if len(linha) %3E 0 && linha%5Blen(linha)-1%5D == '%5Cn' %7B%0A            linha = linha%5B:len(linha)-1%5D%0A        %7D%0A%0A        // descobre o case da primeira letra%0A        primeiraMaiuscula := false%0A        \n+%0A%09%09indice := 0 // conta apenas letras (ignorando espa%C3%A7os)%0A%0A%09%09\n for \n@@ -315,462 +315,126 @@\n a %7B%0A\n-            \n+%09%09%09\n if c \n-!= ' \n+== '%5Cn\n ' %7B%0A\n-                primeiraMaiuscula = unicode.IsUpper(c)%0A                break%0A            %7D%0A        %7D%0A%0A        pos := 0%0A        for _, c := range linha %7B%0A            if c == ' ' %7B%0A                fmt.Print(%22 %22)%0A                continue%0A            %7D%0A%0A            deveMaiuscula := (pos%252 == 0 && primeiraMaiuscula) %7C%7C%0A                             (pos%252 == 1 && !primeiraMaiuscula)%0A%0A            if deveMaiuscula %7B%0A                \n+%09%09%09%09continue%0A%09%09%09%7D%0A%0A%09%09%09if c == ' ' %7B%0A%09%09%09%09fmt.Print(%22 %22)%0A%09%09%09%09continue%0A%09%09%09%7D%0A%0A%09%09%09if indice%252 == 0 %7B%0A%09%09%09%09\n fmt.\n@@ -460,55 +460,34 @@\n e.To\n-Upp\n+Low\n er(c))%0A\n-            %7D else %7B%0A                \n+%09%09%09%7D else %7B%0A%09%09%09%09\n fmt.\n@@ -513,68 +513,41 @@\n e.To\n-Low\n+Upp\n er(c))%0A\n-            %7D%0A            pos++%0A        %7D%0A        \n+%09%09%09%7D%0A%09%09%09indice++%0A%09%09%7D%0A%09%09\n fmt.\n@@ -560,12 +560,9 @@\n n()%0A\n-    \n+%09\n %7D%0A%7D%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-06_03-58-11",
+            "content": "package main\n\nimport (\n    \"bufio\"\n    \"fmt\"\n    \"os\"\n    \"unicode\"\n)\n\nfunc main() {\n    in := bufio.NewReader(os.Stdin)\n\n    var n int\n    fmt.Fscan(in, &n)\n    in.ReadByte() // consome '\\n'\n\n    for ; n > 0; n-- {\n        linha, _ := in.ReadString('\\n')\n        if len(linha) > 0 && linha[len(linha)-1] == '\\n' {\n            linha = linha[:len(linha)-1]\n        }\n\n        // descobre o case da primeira letra\n        primeiraMaiuscula := false\n        for _, c := range linha {\n            if c != ' ' {\n                primeiraMaiuscula = unicode.IsUpper(c)\n                break\n            }\n        }\n\n        pos := 0\n        for _, c := range linha {\n            if c == ' ' {\n                fmt.Print(\" \")\n                continue\n            }\n\n            deveMaiuscula := (pos%2 == 0 && primeiraMaiuscula) ||\n                             (pos%2 == 1 && !primeiraMaiuscula)\n\n            if deveMaiuscula {\n                fmt.Printf(\"%c\", unicode.ToUpper(c))\n            } else {\n                fmt.Printf(\"%c\", unicode.ToLower(c))\n            }\n            pos++\n        }\n        fmt.Println()\n    }\n}\n",
+            "lines": "51"
+        }
+    ]
+}

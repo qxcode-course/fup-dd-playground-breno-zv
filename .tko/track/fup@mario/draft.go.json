@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_02-38-02",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tv := make([]int, n)\n\tmax := 0\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&v[i])\n\t\tif v[i] > max {\n\t\t\tmax = v[i]\n\t\t}\n\t}\n\n\tfor linha := max; linha >= 1; linha-- {\n\t\tfor i := 0; i < n; i++ {\n\t\t\tif v[i] >= linha {\n\t\t\t\tfmt.Print(\"#\")\n\t\t\t} else {\n\t\t\t\tfmt.Print(\"_\")\n\t\t\t}\n\t\t}\n\t\tfmt.Println()\n\t}\n}\n",
+            "lines": "29"
+        }
+    ]
+}

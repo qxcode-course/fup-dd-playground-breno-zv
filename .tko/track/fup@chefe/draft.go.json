@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_02-43-27",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc main() {\n\tin := bufio.NewReader(os.Stdin)\n\n\tvar ultron string\n\tlinha, _ := in.ReadString('\\n')\n\tultron = strings.TrimSpace(strings.ToLower(linha))\n\n\tlinha, _ = in.ReadString('\\n')\n\tlinha = strings.TrimSpace(strings.ToLower(linha))\n\n\t// cria conjunto de letras do ultron\n\tm := make(map[rune]bool)\n\tfor _, c := range ultron {\n\t\tm[c] = true\n\t}\n\n\tpessoas := strings.Fields(linha)\n\tresp := make([]string, 0, len(pessoas))\n\n\tfor _, p := range pessoas {\n\t\tcont := 0\n\t\tfor _, c := range p {\n\t\t\tif m[c] {\n\t\t\t\tcont++\n\t\t\t}\n\t\t}\n\n\t\tif cont == len(p) {\n\t\t\tresp = append(resp, \"chefe\")\n\t\t} else if cont*2 > len(p) {\n\t\t\tresp = append(resp, \"ultron\")\n\t\t} else {\n\t\t\tresp = append(resp, \"pessoa\")\n\t\t}\n\t}\n\n\tfmt.Println(strings.Join(resp, \" \"))\n}\n",
+            "lines": "47"
+        }
+    ]
+}

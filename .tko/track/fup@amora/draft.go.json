@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_02-32-12",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\ttexto, _ := reader.ReadString('\\n')\n\ttexto = strings.TrimRight(texto, \"\\r\\n\")\n\n\ttrecho, _ := reader.ReadString('\\n')\n\ttrecho = strings.TrimRight(trecho, \"\\r\\n\")\n\n\tcont := 0\n\n\tfor i := 0; i+len(trecho) <= len(texto); i++ {\n\t\tif texto[i:i+len(trecho)] == trecho {\n\t\t\tcont++\n\t\t}\n\t}\n\n\tfmt.Println(cont)\n}\n",
+            "lines": "28"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_02-39-08",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar a, b rune\n\tvar op string\n\n\tfmt.Scanf(\"%c\\n\", &a)\n\tfmt.Scanln(&op)\n\tfmt.Scanf(\"%c\", &b)\n\n\tx := int(a - 'a')\n\ty := int(b - 'a')\n\n\tif op == \"+\" {\n\t\tfmt.Printf(\"%c\\n\", rune((x+y)%26)+'a')\n\t} else {\n\t\tfmt.Printf(\"%c\\n\", rune((x-y+26)%26)+'a')\n\t}\n}\n",
+            "lines": "21"
+        }
+    ]
+}

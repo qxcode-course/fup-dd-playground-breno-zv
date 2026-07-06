@@ -31,5 +31,5 @@ audit:
 audit_enabled: false
 audit_interval_seconds: null
 lang: go
-selected: fup@xuxa
-selected_index: 8
+selected: fup@word
+selected_index: 28

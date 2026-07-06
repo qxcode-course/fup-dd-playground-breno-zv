@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_02-20-09",
+            "content": "@@ -42,19 +42,8 @@\n os%22%0A\n-%09%22strings%22%0A\n )%0A%0Af\n@@ -297,114 +297,44 @@\n )%0A%0A%09\n-// l%C3%AA a linha inteira, incluindo espa%C3%A7os%0A%09s, _ := reader.ReadString('%5Cn')%0A%09s = strings.TrimRight(s, %22%5Cr%5Cn%22\n+var s string%0A%09fmt.Fscanln(reader, &s\n )%0A%0A%09\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-07-06_02-21-38",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc substring(s string, inicio, qtd int) string {\n\tif inicio < 0 || inicio >= len(s) || qtd < 0 {\n\t\treturn \"\"\n\t}\n\n\tfim := inicio + qtd\n\tif fim > len(s) {\n\t\tfim = len(s)\n\t}\n\n\treturn s[inicio:fim]\n}\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\t// l\u00ea a linha inteira, incluindo espa\u00e7os\n\ts, _ := reader.ReadString('\\n')\n\ts = strings.TrimRight(s, \"\\r\\n\")\n\n\tvar inicio, qtd int\n\tfmt.Fscan(reader, &inicio)\n\tfmt.Fscan(reader, &qtd)\n\n\tfmt.Println(substring(s, inicio, qtd))\n}\n",
+            "lines": "35"
+        }
+    ]
+}

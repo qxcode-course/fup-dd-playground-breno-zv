@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_04-08-47",
+            "content": "@@ -44,24 +44,12 @@\n var \n-materia, antimat\n+a, b\n  str\n@@ -63,22 +63,16 @@\n t.Scan(&\n-materi\n a)%0A%09fmt.\n@@ -81,214 +81,310 @@\n an(&\n-antimat)%0A%0A%09i := len(materia) - 1%0A%09j := 0%0A%0A%09// aniquila enquanto os caracteres coincidirem%0A%09for i %3E= 0 && j\n+b)%0A%0A%09maior := 0%0A%0A%09// procura a maior sobreposi%C3%A7%C3%A3o:%0A%09// final de a == come%C3%A7o de b%0A%09for k := 1; k\n  %3C\n+=\n  len(a\n-ntimat) && materia%5Bi%5D == antimat%5Bj%5D %7B%0A%09%09i--%0A%09%09j++%0A%09%7D%0A%0A%09fmt.Println(materia%5B:i+1%5D + antimat%5Bj\n+) && k %3C= len(b); k++ %7B%0A%09%09ok := true%0A%09%09for i := 0; i %3C k; i++ %7B%0A%09%09%09if a%5Blen(a)-k+i%5D != b%5Bi%5D %7B%0A%09%09%09%09ok = false%0A%09%09%09%09break%0A%09%09%09%7D%0A%09%09%7D%0A%09%09if ok %7B%0A%09%09%09maior = k%0A%09%09%7D%0A%09%7D%0A%0A%09fmt.Println(a%5B:len(a)-maior%5D + b%5Bmaior\n :%5D)%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-07-06_04-10-39",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar materia, antimat string\n\tfmt.Scan(&materia)\n\tfmt.Scan(&antimat)\n\n\ti := len(materia) - 1\n\tj := 0\n\n\t// aniquila enquanto os caracteres coincidirem\n\tfor i >= 0 && j < len(antimat) && materia[i] == antimat[j] {\n\t\ti--\n\t\tj++\n\t}\n\n\tfmt.Println(materia[:i+1] + antimat[j:])\n}\n",
+            "lines": "20"
+        }
+    ]
+}

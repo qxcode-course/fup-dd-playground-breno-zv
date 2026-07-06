@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_02-22-28",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tleds := [10]int{6, 2, 5, 5, 4, 5, 6, 3, 7, 6}\n\n\tfor i := 0; i < n; i++ {\n\t\tvar s string\n\t\tfmt.Scan(&s)\n\n\t\ttotal := 0\n\t\tfor _, c := range s {\n\t\t\ttotal += leds[c-'0']\n\t\t}\n\n\t\tfmt.Printf(\"%d leds\\n\", total)\n\t}\n}\n",
+            "lines": "22"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_02-18-55",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar c byte\n\tfmt.Scanf(\"%c\", &c)\n\n\tif c >= 'a' && c <= 'z' {\n\t\tc = c - 'a' + 'A'\n\t} else if c >= 'A' && c <= 'Z' {\n\t\tc = c - 'A' + 'a'\n\t}\n\n\tfmt.Printf(\"%c\\n\", c)\n}\n",
+            "lines": "16"
+        }
+    ]
+}
