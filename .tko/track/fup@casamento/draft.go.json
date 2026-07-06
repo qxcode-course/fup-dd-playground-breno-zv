@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-03_00-39-37",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar x int\n\tfmt.Scan(&x)\n\n\tmenor := x\n\tmaior := x\n\n\tfor i := 1; i < 5; i++ {\n\t\tfmt.Scan(&x)\n\n\t\tif x < menor {\n\t\t\tmenor = x\n\t\t}\n\n\t\tif x > maior {\n\t\t\tmaior = x\n\t\t}\n\t}\n\n\tfmt.Println(menor + maior)\n}\n",
+            "lines": "25"
+        }
+    ]
+}

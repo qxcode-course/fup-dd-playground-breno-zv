@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-02_22-11-28",
+            "content": "@@ -254,15 +254,14 @@\n rintln(%22\n- \n %5D%22)%0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-07-02_22-11-41",
+            "content": "@@ -148,17 +148,16 @@\n Print(%22%5B\n- \n %22)%0A%09for \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-07-02_22-11-56",
+            "content": "@@ -230,16 +230,17 @@\n .Print(%22\n+ \n %22)%0A%09%09%7D%0A%09\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-07-02_22-12-04",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tvet := make([]int, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&vet[i])\n\t}\n\n\tfmt.Print(\"[ \")\n\tfor i := n - 1; i >= 0; i-- {\n\t\tfmt.Print(vet[i])\n\t\tif i > 0 {\n\t\t\tfmt.Print(\"\")\n\t\t}\n\t}\n\tfmt.Println(\" ]\")\n}\n",
+            "lines": "23"
+        }
+    ]
+}

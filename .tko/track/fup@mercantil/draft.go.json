@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-03_00-35-54",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tvalores := make([]float64, n)\n\tchutes := make([]float64, n)\n\tescolhas := make([]string, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&valores[i])\n\t}\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&chutes[i])\n\t}\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&escolhas[i])\n\t}\n\n\tprimeiro := 0\n\tsegundo := 0\n\n\tfor i := 0; i < n; i++ {\n\t\tvalor := valores[i]\n\t\tchute := chutes[i]\n\t\tescolha := escolhas[i]\n\n\t\tif valor == chute {\n\t\t\tprimeiro++\n\t\t} else if valor > chute {\n\t\t\tif escolha == \"M\" {\n\t\t\t\tsegundo++\n\t\t\t} else {\n\t\t\t\tprimeiro++\n\t\t\t}\n\t\t} else { // valor < chute\n\t\t\tif escolha == \"m\" {\n\t\t\t\tsegundo++\n\t\t\t} else {\n\t\t\t\tprimeiro++\n\t\t\t}\n\t\t}\n\t}\n\n\tif primeiro > segundo {\n\t\tfmt.Println(\"primeiro\")\n\t} else if segundo > primeiro {\n\t\tfmt.Println(\"segundo\")\n\t} else {\n\t\tfmt.Println(\"empate\")\n\t}\n}\n",
+            "lines": "57"
+        }
+    ]
+}

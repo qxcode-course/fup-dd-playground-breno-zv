@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_02-02-42",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar N, Q int\n\tfmt.Scan(&N, &Q)\n\n\tcasas := make([]int, N)\n\n\tfor i := 0; i < Q; i++ {\n\t\tvar A, B, L int\n\t\tfmt.Scan(&A, &B, &L)\n\n\t\tfor j := A; j <= B; j++ {\n\t\t\tcasas[j] += L\n\t\t}\n\t}\n\n\tfor i := 0; i < N; i++ {\n\t\tif i > 0 {\n\t\t\tfmt.Print(\" \")\n\t\t}\n\t\tfmt.Print(casas[i])\n\t}\n\tfmt.Println()\n}\n",
+            "lines": "27"
+        }
+    ]
+}

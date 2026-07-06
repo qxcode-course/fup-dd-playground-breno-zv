@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_01-45-55",
+            "content": "@@ -470,74 +470,89 @@\n %0A%0A%09%09\n-if teste %3E 1 %7B%0A    fmt.Println()%0A%7D%0Afmt.Printf(%22Teste %25d%5Cn%22, \n+fmt.Printf(%22Teste %25d%5Cn%22, teste)%0A%09%09fmt.Println(fila%5B0%5D)%0A%09%09fmt.Println()%0A%0A%09%09\n teste\n-)\n+++\n %0A%09%7D%0A\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-07-06_01-47-55",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tteste := 1\n\n\tfor {\n\t\tvar P, R int\n\t\tfmt.Scan(&P, &R)\n\n\t\tif P == 0 && R == 0 {\n\t\t\tbreak\n\t\t}\n\n\t\tfila := make([]int, P)\n\t\tfor i := 0; i < P; i++ {\n\t\t\tfmt.Scan(&fila[i])\n\t\t}\n\n\t\tfor rodada := 0; rodada < R; rodada++ {\n\t\t\tvar N, J int\n\t\t\tfmt.Scan(&N, &J)\n\n\t\t\tnovaFila := []int{}\n\n\t\t\tfor i := 0; i < N; i++ {\n\t\t\t\tvar A int\n\t\t\t\tfmt.Scan(&A)\n\n\t\t\t\tif A == J {\n\t\t\t\t\tnovaFila = append(novaFila, fila[i])\n\t\t\t\t}\n\t\t\t}\n\n\t\t\tfila = novaFila\n\t\t}\n\n\t\tif teste > 1 {\n    fmt.Println()\n}\nfmt.Printf(\"Teste %d\\n\", teste)\n\t}\n}\n",
+            "lines": "44"
+        }
+    ]
+}

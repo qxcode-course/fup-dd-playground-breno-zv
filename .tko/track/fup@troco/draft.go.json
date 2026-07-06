@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-02_23-39-58",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar valor float64\n\tfmt.Scan(&valor)\n\n\t// converte para centavos para evitar erros de ponto flutuante\n\tcentavos := int(valor*100 + 0.5)\n\n\topcoes := []int{\n\t\t10000, // 100.00\n\t\t5000,  // 50.00\n\t\t2000,  // 20.00\n\t\t1000,  // 10.00\n\t\t500,   // 5.00\n\t\t200,   // 2.00\n\t\t100,   // 1.00\n\t\t50,    // 0.50\n\t\t25,    // 0.25\n\t\t10,    // 0.10\n\t\t5,     // 0.05\n\t}\n\n\tfor _, moeda := range opcoes {\n\t\tqtd := centavos / moeda\n\n\t\tif qtd > 0 {\n\t\t\tfmt.Printf(\"%d de %.2f\\n\", qtd, float64(moeda)/100)\n\t\t\tcentavos %= moeda\n\t\t}\n\t}\n\n\tif centavos > 0 {\n\t\tfmt.Printf(\"Falta %.2f\\n\", float64(centavos)/100)\n\t}\n}\n",
+            "lines": "38"
+        }
+    ]
+}

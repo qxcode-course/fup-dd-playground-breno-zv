@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-02_23-50-40",
+            "content": "package main \nimport \"fmt\"\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tunicos := []int{}\n\n\tfor i := 0; i < n; i++ {\n\t\tvar x int\n\t\tfmt.Scan(&x)\n\n\t\texiste := false\n\t\tfor j := 0; j < len(unicos); j++ {\n\t\t\tif unicos[j] == x {\n\t\t\t\texiste = true\n\t\t\t\tbreak\n\t\t\t}\n\t\t}\n\n\t\tif !existe {\n\t\t\tunicos = append(unicos, x)\n\t\t}\n\t}\n\tfor i := 0; i < len(unicos); i++ {\n\t\tfor j := 0; j < len(unicos)-1; j++ {\n\t\t\tif unicos[j] > unicos[j+1] {\n\t\t\t\tunicos[j], unicos[j+1] = unicos[j+1], unicos[j]\n\t\t\t}\n\t\t}\n\t}\n\n\tfor i := 0; i < len(unicos); i++ {\n\t\tfmt.Print(unicos[i])\n\t\tif i < len(unicos)-1 {\n\t\t\tfmt.Print(\" \")\n\t\t}\n\t}\n\tfmt.Println()\n}\n",
+            "lines": "40"
+        }
+    ]
+}

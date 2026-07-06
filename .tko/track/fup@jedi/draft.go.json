@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-03_00-30-23",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar T int\n\tfmt.Scan(&T)\n\n\tjedi := 0\n\tsith := 0\n\n\tfor i := 0; i < T; i++ {\n\t\tvar x int\n\t\tfmt.Scan(&x)\n\n\t\tif i < T/2 {\n\t\t\tjedi += x\n\t\t} else {\n\t\t\tsith += x\n\t\t}\n\t}\n\n\tif jedi > sith {\n\t\tfmt.Println(\"Jedi\")\n\t} else if sith > jedi {\n\t\tfmt.Println(\"Sith\")\n\t} else {\n\t\tfmt.Println(\"Empate\")\n\t}\n}\n",
+            "lines": "28"
+        }
+    ]
+}

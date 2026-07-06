@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_02-05-30",
+            "content": "@@ -10,335 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0A%0Afunc main() %7B%0A%09reader := bufio.NewReader(os.Stdin)%0A%0A%09frase, _ := reader.ReadString('%5Cn')%0A%0A%09// remove o '%5Cn' se existir%0A%09if len(frase) %3E 0 && frase%5Blen(frase)-1%5D == '%5Cn' %7B%0A%09%09frase = frase%5B:len(frase)-1%5D%0A%09%7D%0A%0A%09for i := len(frase) - 1; i %3E= 0; i-- %7B%0A%09%09fmt.Print(string(frase%5Bi%5D))%0A%09%7D%0A%09fmt.Println(\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-06_02-06-18",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\tfrase, _ := reader.ReadString('\\n')\n\n\t// remove o '\\n' se existir\n\tif len(frase) > 0 && frase[len(frase)-1] == '\\n' {\n\t\tfrase = frase[:len(frase)-1]\n\t}\n\n\tfor i := len(frase) - 1; i >= 0; i-- {\n\t\tfmt.Print(string(frase[i]))\n\t}\n\tfmt.Println()\n}\n",
+            "lines": "23"
+        }
+    ]
+}

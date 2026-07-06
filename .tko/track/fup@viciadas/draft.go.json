@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_02-03-01",
+            "content": "@@ -10,36 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22sort%22%0A)%0A%0A\n func\n@@ -37,584 +37,39 @@\n ) %7B%0A\n-%09var n int%0A%09fmt.Scan(&n)%0A%0A%09freq := make(map%5Bint%5Dint)%0A%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09var x int%0A%09%09fmt.Scan(&x)%0A%09%09freq%5Bx%5D++%0A%09%7D%0A%0A%09// quantidade de elementos diferentes%0A%09fmt.Println(len(freq))%0A%0A%09// encontra a maior frequ%C3%AAncia%0A%09maior := 0%0A%09for _, v := range freq %7B%0A%09%09if v %3E maior %7B%0A%09%09%09maior = v%0A%09%09%7D%0A%09%7D%0A%0A%09// coleta todos os elementos com frequ%C3%AAncia m%C3%A1xima%0A%09var resp %5B%5Dint%0A%09for k, v := range freq %7B%0A%09%09if v == maior %7B%0A%09%09%09resp = append(resp, k)%0A%09%09%7D%0A%09%7D%0A%0A%09sort.Ints(resp)%0A%0A%09// imprime os elementos%0A%09for i, v := range resp %7B%0A%09%09if i %3E 0 %7B%0A%09%09%09fmt.Print(%22 %22)%0A%09%09%7D%0A%09%09fmt.Print(v)%0A%09%7D%0A%09fmt.Println(\n+    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-06_02-03-36",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"sort\"\n)\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tfreq := make(map[int]int)\n\n\tfor i := 0; i < n; i++ {\n\t\tvar x int\n\t\tfmt.Scan(&x)\n\t\tfreq[x]++\n\t}\n\n\t// quantidade de elementos diferentes\n\tfmt.Println(len(freq))\n\n\t// encontra a maior frequ\u00eancia\n\tmaior := 0\n\tfor _, v := range freq {\n\t\tif v > maior {\n\t\t\tmaior = v\n\t\t}\n\t}\n\n\t// coleta todos os elementos com frequ\u00eancia m\u00e1xima\n\tvar resp []int\n\tfor k, v := range freq {\n\t\tif v == maior {\n\t\t\tresp = append(resp, k)\n\t\t}\n\t}\n\n\tsort.Ints(resp)\n\n\t// imprime os elementos\n\tfor i, v := range resp {\n\t\tif i > 0 {\n\t\t\tfmt.Print(\" \")\n\t\t}\n\t\tfmt.Print(v)\n\t}\n\tfmt.Println()\n}\n",
+            "lines": "49"
+        }
+    ]
+}

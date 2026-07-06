@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-03_00-34-29",
+            "content": "package main\nimport \"fmt\"\nfunc media(vet []float64) float64 {\n\tsoma := 0.0\n\n\tfor _, v := range vet {\n\t\tsoma += v\n\t}\n\n\treturn soma / float64(len(vet))\n}\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\talturas := make([]float64, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&alturas[i])\n\t}\n\n\tm := media(alturas)\n\n\tfmt.Printf(\"%.2f\\n\", m)\n\n\tfor i, h := range alturas {\n\t\tif h < m {\n\t\t\tfmt.Print(\"P\")\n\t\t} else if h > m {\n\t\t\tfmt.Print(\"G\")\n\t\t} else {\n\t\t\tfmt.Print(\"M\")\n\t\t}\n\n\t\tif i < n-1 {\n\t\t\tfmt.Print(\" \")\n\t\t}\n\t}\n\n\tfmt.Println()\n}\n",
+            "lines": "42"
+        }
+    ]
+}

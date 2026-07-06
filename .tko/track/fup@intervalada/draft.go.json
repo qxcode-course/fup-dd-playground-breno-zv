@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-03_00-07-38",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n, inferior, superior int\n\tfmt.Scan(&n, &inferior, &superior)\n\n\tcont := 0\n\n\tfor i := 0; i < n; i++ {\n\t\tvar x int\n\t\tfmt.Scan(&x)\n\n\t\tif x >= inferior && x <= superior {\n\t\t\tcont++\n\t\t}\n\t}\n\n\tfmt.Println(cont)\n}\n",
+            "lines": "21"
+        }
+    ]
+}

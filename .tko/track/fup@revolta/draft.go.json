@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-22_17-27-46",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,325 +37,39 @@\n ) %7B%0A\n-%09var n, x int%0A%09soldados := 0%0A%09rebeldes := 0%0A%0A%09fmt.Scan(&n)%0A%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09fmt.Scan(&x)%0A%0A%09%09if x%252 != 0 %7B%0A%09%09%09soldados += x%0A%09%09%7D else %7B%0A%09%09%09rebeldes += x%0A%09%09%7D%0A%09%7D%0A%0A%09if soldados %3E rebeldes %7B%0A%09%09fmt.Println(%22soldados%22)%0A%09%7D else if rebeldes %3E soldados %7B%0A%09%09fmt.Println(%22rebeldes%22)%0A%09%7D else %7B%0A%09%09fmt.Println(%22empate%22)%0A%09%7D\n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        }
+    ]
+}

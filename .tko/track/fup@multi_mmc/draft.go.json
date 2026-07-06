@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_01-59-05",
+            "content": "@@ -1,12 +1,40 @@\n+package main%0A%0Aimport %22fmt%22%0A%0A\n func mdc(a, \n@@ -46,20 +46,17 @@\n ) int %7B%0A\n-    \n+%09\n for b !=\n@@ -60,24 +60,18 @@\n  != 0 %7B%0A\n-        \n+%09%09\n a, b = b\n@@ -76,26 +76,20 @@\n  b, a%25b%0A\n-    %7D%0A    \n+%09%7D%0A%09\n return a\n@@ -117,20 +117,17 @@\n ) int %7B%0A\n-    \n+%09\n return a\n@@ -175,20 +175,17 @@\n ) int %7B%0A\n-    \n+%09\n resp := \n@@ -189,20 +189,17 @@\n := v%5B0%5D%0A\n-    \n+%09\n for i :=\n@@ -224,16 +224,10 @@\n + %7B%0A\n-        \n+%09%09\n resp\n@@ -249,28 +249,160 @@\n i%5D)%0A\n-    %7D%0A    return resp\n+%09%7D%0A%09return resp%0A%7D%0A%0Afunc main() %7B%0A%09var n int%0A%09fmt.Scan(&n)%0A%0A%09v := make(%5B%5Dint, n)%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09fmt.Scan(&v%5Bi%5D)%0A%09%7D%0A%0A%09fmt.Println(mmcVetor(v))\n %0A%7D%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-07-06_02-01-08",
+            "content": "@@ -1,32 +1,4 @@\n-package main%0A%0Aimport %22fmt%22%0A%0A\n func\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-07-06_02-01-22",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc mdc(a, b int) int {\n    for b != 0 {\n        a, b = b, a%b\n    }\n    return a\n}\n\nfunc mmc(a, b int) int {\n    return a / mdc(a, b) * b\n}\n\nfunc mmcVetor(v []int) int {\n    resp := v[0]\n    for i := 1; i < len(v); i++ {\n        resp = mmc(resp, v[i])\n    }\n    return resp\n}\n",
+            "lines": "22"
+        }
+    ]
+}

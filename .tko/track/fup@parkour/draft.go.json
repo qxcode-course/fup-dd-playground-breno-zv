@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-03_00-00-17",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tblocos := make([]int, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&blocos[i])\n\t}\n\n\tparkour := 0\n\n\tfor i := 0; i < n-1; i++ {\n\t\tdif := blocos[i] - blocos[i+1]\n\n\t\tif dif < 0 {\n\t\t\tdif = -dif\n\t\t}\n\n\t\tif dif > 1 {\n\t\t\tparkour++\n\t\t}\n\t}\n\n\tfmt.Println(parkour)\n}\n",
+            "lines": "28"
+        }
+    ]
+}

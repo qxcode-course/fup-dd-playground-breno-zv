@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_02-04-48",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n, x int\n\tfmt.Scan(&n)\n\tfmt.Scan(&x)\n\n\t// cria a lista de jogadores\n\tjogadores := make([]int, n)\n\tfor i := 0; i < n; i++ {\n\t\tjogadores[i] = i + 1\n\t}\n\n\t// encontra a posi\u00e7\u00e3o inicial do jogador X\n\tpos := 0\n\tfor jogadores[pos] != x {\n\t\tpos++\n\t}\n\n\t// enquanto houver mais de um jogador\n\tfor len(jogadores) > 1 {\n\t\t// \u00edndice da v\u00edtima\n\t\tmorto := (pos + 1) % len(jogadores)\n\n\t\t// remove a v\u00edtima\n\t\tjogadores = append(jogadores[:morto], jogadores[morto+1:]...)\n\n\t\t// a espada passa para o pr\u00f3ximo vivo\n\t\tif morto >= len(jogadores) {\n\t\t\tpos = 0\n\t\t} else {\n\t\t\tpos = morto\n\t\t}\n\t}\n\n\tfmt.Println(jogadores[0])\n}\n",
+            "lines": "39"
+        }
+    ]
+}

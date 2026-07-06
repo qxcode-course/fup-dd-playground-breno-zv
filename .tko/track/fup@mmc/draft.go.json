@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_01-42-34",
+            "content": "@@ -1,99 +1,146 @@\n-package main%0A%0Aimport %22fmt%22%0A%0Afunc mdc(\n+#include %3Cstdio.h%3E%0A%0Aint mdc(int \n a,\n- b\n  int\n-) int %7B%0A%09for \n+ b) %7B%0A    while (\n b != 0\n+)\n  %7B%0A\n-%09%09a, b = b, a%25b%0A%09%7D%0A%09\n+        int temp = b;%0A        b = a %25 b;%0A        a = temp;%0A    %7D%0A    \n return a\n %0A%7D%0A%0A\n@@ -139,84 +139,173 @@\n rn a\n+;\n %0A%7D%0A%0A\n-%0A\n-%0Afunc main() %7B%0A%09var n, m int%0A%0A%09fmt.Scan(\n+int mmc(int a, int b) %7B%0A    return (a * b) / mdc(a, b);%0A%7D%0A%0Aint main() %7B%0A    int n, m;%0A%0A    scanf(%22%25d %25d%22, \n &n, &m)\n+;\n %0A%0A\n-%09fmt.Println(mmc(n, m))\n+    printf(%22%25d%5Cn%22, mmc(n, m));%0A%0A    return 0;\n %0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-07-06_01-43-11",
+            "content": "@@ -1,103 +1,38 @@\n-package main%0A%0Aimport %22fmt%22%0A%0Afunc mdc(a, b int) int %7B%0A%09for b != 0 %7B%0A%09%09a, b = b, a%25b%0A%09%7D%0A%09return a%0A%7D%0A%0A\n+@@ -96,62 +96,8 @@%0A %250A%257D%250A%250A%0A-\n func\n@@ -50,19 +50,25 @@\n nt) int \n-%7B%0A%09\n+%257B%250A%2509\n return (\n@@ -69,17 +69,17 @@\n turn (a \n--\n++\n  b) / md\n@@ -89,82 +89,21 @@\n , b)\n-%0A%7D%0A%0Afunc main() %7B%0A%09var n, m int%0A%0A%09fmt.Scan(&n, &m)%0A%0A%09fmt.Println(mmc(n, m))%0A%7D\n+%250A%257D%0A %250A%250Afu\n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-07-06_01-43-28",
+            "content": "@@ -132,9 +132,9 @@\n  (a \n-*\n+-\n  b) \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-07-06_01-43-34",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc mdc(a, b int) int {\n\tfor b != 0 {\n\t\ta, b = b, a%b\n\t}\n\treturn a\n}\n\nfunc mmc(a, b int) int {\n\treturn (a * b) / mdc(a, b)\n}\n\nfunc main() {\n\tvar n, m int\n\n\tfmt.Scan(&n, &m)\n\n\tfmt.Println(mmc(n, m))\n}\n",
+            "lines": "22"
+        }
+    ]
+}

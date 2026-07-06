@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_01-55-31",
+            "content": "@@ -1,423 +1,899 @@\n-packag\n+Voc%C3%AA receb\n e \n+u\n ma\n-in%0A%0Aimport %22fmt%22%0A%0Afunc main() %7B%0A%09var n int%0A%09fmt.Scan(&n)%0A%0A%09v := make(%5B%5Dfloat64, n)%0A%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09fmt.Scan(&v%5Bi%5D)%0A%09%7D%0A%0A%09// Bubble Sort%0A%09for i := 0; i %3C n-1; i++ %7B%0A%09%09for j := 0; j %3C n-1-i; j++ %7B%0A%09%09%09if v%5Bj%5D %3E v%5Bj+1%5D %7B%0A%09%09%09%09v%5Bj%5D, v%5Bj+1%5D = v%5Bj+1%5D, v%5Bj%5D%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%0A%09var mediana float64%0A%0A%09if n%252 == 1 %7B%0A%09%09mediana = v%5Bn/2%5D%0A%09%7D else %7B%0A%09%09mediana = (v%5Bn/2-1%5D + v%5Bn/2%5D) / 2%0A%09%7D%0A%0A%09fmt.Printf(%22%25.1f%5Cn%22, mediana)%0A%7D\n+ vetor A de inteiros n%C3%A3o negativos de tamanho %60n%60. Sua tarefa %C3%A9 ordernar o vetor em ordem crescente e imprimir os %C3%ADndices originais do novo vetor ordenado.%0A%0AExemplo:%0A%0AA = %7B4,5,3,7,1%7D%0A%0AAp%C3%B3s a ordena%C3%A7%C3%A3o, o vetor ordenado ser%C3%A1%0A%0AA = %7B1,3,4,5,7%7D.%0A%0AA sa%C3%ADda para esse vetor deve ser %224 2 0 1 3%22%0A%0ANOTA: A indexa%C3%A7%C3%A3o da vetor come%C3%A7a com 0.%0A%0A### Entrada%0A%0AA primeira linha de entrada consiste no tamanho da vetor A. A pr%C3%B3xima linha consiste no vetor de tamanho n.%0A%0A### Sa%C3%ADda%0A%0AA sa%C3%ADda consiste em uma %C3%BAnica linha de inteiros representando os %C3%ADndices originais de cada elemento no vetor ordenado entre %5B %5D%0A%0A## Restri%C3%A7%C3%B5es%0A%0A1 %3C= m %3C= 10%5E6%0A%0A0 %3C= A%5C%5Bi%5C%5D %3C= 10%5E6%0A%0AExemplo de Entrada%0A%0A%60%60%60py%0A5%0A4 5 3 7 1%0A%60%60%60%0A%0AExemplo de Sa%C3%ADda%0A%0A%60%60%60py%0A%5B 4 2 0 1 3 %5D%0A%60%60%60%0A%0A## Exemplos%0A%0A%3C!-- load tests.toml --tests 1 --%3E%0A%60%60%60py%0A%3E%3E%3E%3E%3E%3E%3E%3E INSERT%0A10%0A7 5 4 3 2 1 8 0 9 6%0A======== EXPECT%0A%5B 7 5 4 3 2 1 9 0 6 8 %5D%0A%3C%3C%3C%3C%3C%3C%3C%3C FINISH%0A%60%60%60\n %0A\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-07-06_01-55-53",
+            "content": "@@ -25,54 +25,8 @@\n t%22%0A%0A\n-type Item struct %7B%0A%09valor  int%0A%09indice int%0A%7D%0A%0A\n func\n@@ -78,12 +78,15 @@\n e(%5B%5D\n-Item\n+float64\n , n)\n@@ -133,33 +133,9 @@\n v%5Bi%5D\n-.valor)%0A%09%09v%5Bi%5D.indice = i\n+)\n %0A%09%7D%0A\n@@ -154,19 +154,8 @@\n Sort\n- pelo valor\n %0A%09fo\n@@ -220,22 +220,16 @@\n %09if v%5Bj%5D\n-.valor\n  %3E v%5Bj+1\n@@ -233,14 +233,8 @@\n j+1%5D\n-.valor\n  %7B%0A%09\n@@ -282,115 +282,112 @@\n %7D%0A%0A%09\n-fmt.Print(%22%5B %22)%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09fmt.Print(v%5Bi%5D.indice)%0A%09%09if i != n-1 %7B%0A%09%09%09fmt.Print(%22 %22)%0A%09\n+var mediana float64%0A%0A%09if n%252 == 1 %7B%0A%09%09mediana = v%5Bn/2%5D%0A%09%7D else %7B%0A%09%09mediana = (v%5Bn/2-1%5D + v%5Bn/2%5D) / 2%0A\n %09%7D%0A\n-%09%7D\n %0A%09fm\n@@ -397,15 +397,27 @@\n rint\n-ln(%22 %5D%22\n+f(%22%25.1f%5Cn%22, mediana\n )%0A%7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-07-06_01-56-25",
+            "content": "package main\n\nimport \"fmt\"\n\ntype Item struct {\n\tvalor  int\n\tindice int\n}\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tv := make([]Item, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&v[i].valor)\n\t\tv[i].indice = i\n\t}\n\n\t// Bubble Sort pelo valor\n\tfor i := 0; i < n-1; i++ {\n\t\tfor j := 0; j < n-1-i; j++ {\n\t\t\tif v[j].valor > v[j+1].valor {\n\t\t\t\tv[j], v[j+1] = v[j+1], v[j]\n\t\t\t}\n\t\t}\n\t}\n\n\tfmt.Print(\"[ \")\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Print(v[i].indice)\n\t\tif i != n-1 {\n\t\t\tfmt.Print(\" \")\n\t\t}\n\t}\n\tfmt.Println(\" ]\")\n}\n",
+            "lines": "38"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-03_00-06-42",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tvar esquerda [61]int\n\tvar direita [61]int\n\n\tfor i := 0; i < n; i++ {\n\t\tvar tamanho int\n\t\tvar lado string\n\n\t\tfmt.Scan(&tamanho, &lado)\n\n\t\tif lado == \"E\" {\n\t\t\tesquerda[tamanho]++\n\t\t} else {\n\t\t\tdireita[tamanho]++\n\t\t}\n\t}\n\n\tpares := 0\n\n\tfor i := 30; i <= 60; i++ {\n\t\tif esquerda[i] < direita[i] {\n\t\t\tpares += esquerda[i]\n\t\t} else {\n\t\t\tpares += direita[i]\n\t\t}\n\t}\n\n\tfmt.Println(pares)\n}\n",
+            "lines": "36"
+        }
+    ]
+}

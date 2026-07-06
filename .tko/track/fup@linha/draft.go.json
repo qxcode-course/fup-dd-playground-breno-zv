@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_01-44-50",
+            "content": "@@ -375,17 +375,18 @@\n  %3E= 0; i\n--\n+++\n  %7B%0A%09%09fmt\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-06_01-44-57",
+            "content": "@@ -376,17 +376,16 @@\n %3E= 0; i-\n--\n  %7B%0A%09%09fmt\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-06_01-45-00",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\tlinha, _ := reader.ReadString('\\n')\n\tlinha = strings.TrimSpace(linha)\n\n\tvalores := strings.Fields(linha)\n\tvetor := make([]int, len(valores))\n\n\tfor i, v := range valores {\n\t\tvetor[i], _ = strconv.Atoi(v)\n\t}\n\n\tfmt.Print(\"[ \")\n\tfor i := len(vetor) - 1; i >= 0; i-- {\n\t\tfmt.Print(vetor[i])\n\t\tif i != 0 {\n\t\t\tfmt.Print(\" \")\n\t\t}\n\t}\n\tfmt.Println(\" ]\")\n}\n",
+            "lines": "32"
+        }
+    ]
+}

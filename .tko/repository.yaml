@@ -19,10 +19,10 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@list
+- fup@string
 flags:
   inbox: all
-  panel: graph
+  panel: skills
   task_graph_mode: executions
   show_time: 'true'
 audit:
@@ -31,5 +31,5 @@ audit:
 audit_enabled: false
 audit_interval_seconds: null
 lang: go
-selected: fup@baruel
-selected_index: 16
+selected: fup@xuxa
+selected_index: 8

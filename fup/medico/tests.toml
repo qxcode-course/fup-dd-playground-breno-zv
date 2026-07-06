@@ -1,0 +1,44 @@
+[[tests]]
+input = '''
+3
+0 0 1
+'''
+output = '''
+1
+'''
+
+[[tests]]
+input = '''
+7
+1 0 0 0 1 0 1
+'''
+output = '''
+1
+'''
+
+[[tests]]
+input = '''
+5
+0 0 1 0 0
+'''
+output = '''
+2
+'''
+
+[[tests]]
+input = '''
+7
+1 0 0 0 0 0 1
+'''
+output = '''
+3
+'''
+
+[[tests]]
+input = '''
+6
+0 1 0 0 1 0
+'''
+output = '''
+0
+'''

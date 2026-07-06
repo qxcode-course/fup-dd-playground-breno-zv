@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-02_22-09-33",
+            "content": "@@ -363,14 +363,15 @@\n rintln(%22\n+ \n %5D%22)%0A%7D%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-07-02_22-09-40",
+            "content": "@@ -169,16 +169,17 @@\n Print(%22,\n+ \n %22)%0A%09%09%7D%0A%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-07-02_22-09-48",
+            "content": "@@ -169,17 +169,16 @@\n Print(%22,\n- \n %22)%0A%09%09%7D%0A%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-07-02_22-09-59",
+            "content": "@@ -65,22 +65,8 @@\n n)%0A%0A\n-%09if n == 0 %7B%0A%09\n %09fmt\n@@ -75,43 +75,12 @@\n rint\n-ln\n (%22%5B\n-%5D%22)%0A%09%09return%0A%09%7D%0A%0A%09fmt.Print(%22%5B\n+ \n %22)%0A%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-07-02_22-10-37",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tif n == 0 {\n\t\tfmt.Println(\"[]\")\n\t\treturn\n\t}\n\n\tfmt.Print(\"[\")\n\n\tfor i := 0; i < n; i++ {\n\t\tvar carta int\n\t\tfmt.Scan(&carta)\n\n\t\tif i > 0 {\n\t\t\tfmt.Print(\", \")\n\t\t}\n\n\t\tswitch carta {\n\t\tcase 1:\n\t\t\tfmt.Print(\"A\")\n\t\tcase 11:\n\t\t\tfmt.Print(\"J\")\n\t\tcase 12:\n\t\t\tfmt.Print(\"Q\")\n\t\tcase 13:\n\t\t\tfmt.Print(\"K\")\n\t\tdefault:\n\t\t\tfmt.Print(carta)\n\t\t}\n\t}\n\n\tfmt.Println(\"]\")\n}\n",
+            "lines": "39"
+        }
+    ]
+}

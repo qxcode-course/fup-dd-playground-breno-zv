@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-03_00-36-59",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tsoma := 0\n\tases := 0\n\n\tfor i := 0; i < n; i++ {\n\t\tvar carta int\n\t\tfmt.Scan(&carta)\n\n\t\tswitch carta {\n\t\tcase 1: // \u00c1s\n\t\t\tsoma += 11\n\t\t\tases++\n\t\tcase 11, 12, 13: // J, Q, K\n\t\t\tsoma += 10\n\t\tdefault:\n\t\t\tsoma += carta\n\t\t}\n\t}\n\n\t// Ajusta os ases se estourar 21\n\tfor soma > 21 && ases > 0 {\n\t\tsoma -= 10\n\t\tases--\n\t}\n\n\tfmt.Println(soma)\n}\n",
+            "lines": "34"
+        }
+    ]
+}

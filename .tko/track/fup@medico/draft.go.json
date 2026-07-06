@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-03_00-05-40",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tfila := make([]int, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&fila[i])\n\t}\n\n\trisco := 0\n\n\tfor i := 0; i < n; i++ {\n\t\tif fila[i] == 0 {\n\t\t\ttemMedico := false\n\n\t\t\tif i > 0 && fila[i-1] == 1 {\n\t\t\t\ttemMedico = true\n\t\t\t}\n\n\t\t\tif i < n-1 && fila[i+1] == 1 {\n\t\t\t\ttemMedico = true\n\t\t\t}\n\n\t\t\tif !temMedico {\n\t\t\t\trisco++\n\t\t\t}\n\t\t}\n\t}\n\n\tfmt.Println(risco)\n}\n",
+            "lines": "34"
+        }
+    ]
+}

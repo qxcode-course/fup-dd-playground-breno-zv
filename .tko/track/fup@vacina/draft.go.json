@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_01-54-05",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\tvacinas := make([]int, n)\n\tpacientes := make([]int, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&vacinas[i])\n\t}\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&pacientes[i])\n\t}\n\n\t// Bubble Sort nas vacinas\n\tfor i := 0; i < n-1; i++ {\n\t\tfor j := 0; j < n-1-i; j++ {\n\t\t\tif vacinas[j] > vacinas[j+1] {\n\t\t\t\tvacinas[j], vacinas[j+1] = vacinas[j+1], vacinas[j]\n\t\t\t}\n\t\t}\n\t}\n\n\t// Bubble Sort nos pacientes\n\tfor i := 0; i < n-1; i++ {\n\t\tfor j := 0; j < n-1-i; j++ {\n\t\t\tif pacientes[j] > pacientes[j+1] {\n\t\t\t\tpacientes[j], pacientes[j+1] = pacientes[j+1], pacientes[j]\n\t\t\t}\n\t\t}\n\t}\n\n\tfor i := 0; i < n; i++ {\n\t\tif vacinas[i] <= pacientes[i] {\n\t\t\tfmt.Println(\"No\")\n\t\t\treturn\n\t\t}\n\t}\n\n\tfmt.Println(\"Yes\")\n}\n",
+            "lines": "46"
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-02_22-12-54",
+            "content": "@@ -30,74 +30,217 @@\n unc \n-imprimir(v %5B%5Dint) %7B%0A%09if len(v) == 0 %7B%0A%09%09fmt.Println(%22%5B%5D%22)%0A%09%09return\n+main() %7B%0A%09var n, x int%0A%09impares := %5B%5Dint%7B%7D%0A%09pares := %5B%5Dint%7B%7D%0A%0A%09fmt.Scan(&n)%0A%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09fmt.Scan(&x)%0A%0A%09%09if x%252 != 0 %7B%0A%09%09%09impares = append(impares, x)%0A%09%09%7D else %7B%0A%09%09%09pares = append(pares, x)%0A%09%09%7D\n %0A%09%7D%0A\n@@ -253,17 +253,16 @@\n Print(%22%5B\n- \n %22)%0A%09for \n@@ -277,17 +277,23 @@\n i %3C len(\n-v\n+impares\n ); i++ %7B\n@@ -305,17 +305,23 @@\n t.Print(\n-v\n+impares\n %5Bi%5D)%0A%09%09i\n@@ -330,17 +330,23 @@\n i %3C len(\n-v\n+impares\n )-1 %7B%0A%09%09\n@@ -386,95 +386,28 @@\n ln(%22\n- \n %5D%22)%0A\n-%7D%0A%0Afunc main() %7B%0A%09var n, x int%0A%09var impares %5B%5Dint%0A%09var pares %5B%5Dint%0A%0A%09fmt.Scan(&n)%0A\n+%0A%09fmt.Print(%22%5B%22)\n %0A%09fo\n@@ -412,33 +412,42 @@\n for i := 0; i %3C \n-n\n+len(pares)\n ; i++ %7B%0A%09%09fmt.Sc\n@@ -448,103 +448,64 @@\n fmt.\n-Scan(&x)%0A%0A%09%09if x%252 == 0 %7B%0A%09%09%09pares = app\n+Print(pares%5Bi%5D)%0A%09%09if i %3C l\n en\n-d\n (pares\n-, x)%0A%09%09%7D else %7B%0A%09%09%09impares = append(impares, x\n+)-1 %7B%0A%09%09%09fmt.Print(%22 %22\n )%0A%09%09\n@@ -513,43 +513,24 @@\n %0A%09%7D%0A\n-%0A%09imprimir(impares)%0A%09imprimir(pares\n+%09fmt.Println(%22%5D%22\n )%0A%7D%0A\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-07-02_22-13-21",
+            "content": "@@ -46,20 +46,36 @@\n %5Dint) %7B%0A\n-    \n+%09if len(v) == 0 %7B%0A%09%09\n fmt.Prin\n@@ -79,47 +79,31 @@\n rint\n+ln\n (%22%5B\n+%5D\n %22)%0A\n-    %0A    if len(v) %3E 0 %7B%0A        \n+%09%09return%0A%09%7D%0A%0A%09\n fmt.\n@@ -109,28 +109,22 @@\n .Print(%22\n+%5B\n  %22)%0A\n-        \n+%09\n for i :=\n@@ -145,28 +145,18 @@\n ; i++ %7B%0A\n-            \n+%09%09\n fmt.Prin\n@@ -163,28 +163,18 @@\n t(v%5Bi%5D)%0A\n-            \n+%09%09\n if i %3C l\n@@ -187,97 +187,34 @@\n 1 %7B%0A\n-                fmt.Print(%22 %22)%0A            %7D%0A        %7D%0A        fmt.Print(%22 %22)%0A    %7D%0A%0A    \n+%09%09%09fmt.Print(%22 %22)%0A%09%09%7D%0A%09%7D%0A%09\n fmt.\n@@ -222,16 +222,17 @@\n rintln(%22\n+ \n %5D%22)%0A%7D%0A%0Af\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-07-02_22-14-14",
+            "content": "@@ -316,10 +316,8 @@\n n(%22%5D\n-%5Cn\n %22)%0A%7D\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-02_22-14-24",
+            "content": "@@ -62,17 +62,16 @@\n Print(%22%5B\n- \n %22)%0A    %0A\n@@ -283,16 +283,17 @@\n .Print(%22\n+ \n %22)%0A    %7D\n@@ -315,10 +315,11 @@\n ln(%22\n- \n %5D\n+%5Cn\n %22)%0A%7D\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-02_22-14-42",
+            "content": "@@ -280,25 +280,24 @@\n  fmt.Print(%22\n- \n %22)%0A    %7D%0A%0A  \n@@ -311,16 +311,17 @@\n rintln(%22\n+ \n %5D%22)%0A%7D%0A%0Af\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-02_22-14-53",
+            "content": "@@ -62,16 +62,17 @@\n Print(%22%5B\n+ \n %22)%0A    %0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-02_22-14-57",
+            "content": "@@ -46,17 +46,20 @@\n %5Dint) %7B%0A\n-%09\n+    \n fmt.Prin\n@@ -66,14 +66,67 @@\n t(%22%5B\n- %22)%0A%0A%09\n+%22)%0A    %0A    if len(v) %3E 0 %7B%0A        fmt.Print(%22 %22)%0A        \n for \n@@ -147,26 +147,36 @@\n n(v); i++ %7B%0A\n-%09%09\n+            \n fmt.Print(v%5B\n@@ -179,18 +179,28 @@\n t(v%5Bi%5D)%0A\n-%09%09\n+            \n if i %3C l\n@@ -213,35 +213,97 @@\n 1 %7B%0A\n-%09%09%09fmt.Print(%22 %22)%0A%09%09%7D%0A%09%7D%0A%0A%09\n+                fmt.Print(%22 %22)%0A            %7D%0A        %7D%0A        fmt.Print(%22 %22)%0A    %7D%0A%0A    \n fmt.\n@@ -311,17 +311,16 @@\n rintln(%22\n- \n %5D%22)%0A%7D%0A%0Af\n@@ -351,21 +351,22 @@\n nt%0A%09var \n-aluno\n+impare\n s %5B%5Dint%0A\n@@ -370,23 +370,18 @@\n nt%0A%09var \n-servido\n+pa\n res %5B%5Din\n@@ -453,9 +453,9 @@\n x%252 \n-!\n+=\n = 0 \n@@ -459,21 +459,20 @@\n  0 %7B%0A%09%09%09\n-aluno\n+pare\n s = appe\n@@ -474,21 +474,20 @@\n  append(\n-aluno\n+pare\n s, x)%0A%09%09\n@@ -498,23 +498,20 @@\n se %7B%0A%09%09%09\n-servido\n+impa\n res = ap\n@@ -515,23 +515,20 @@\n  append(\n-servido\n+impa\n res, x)%0A\n@@ -549,13 +549,14 @@\n mir(\n-aluno\n+impare\n s)%0A%09\n@@ -568,15 +568,10 @@\n mir(\n-servido\n+pa\n res)\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-02_22-16-00",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc imprimir(v []int) {\n\tfmt.Print(\"[ \")\n\n\tfor i := 0; i < len(v); i++ {\n\t\tfmt.Print(v[i])\n\t\tif i < len(v)-1 {\n\t\t\tfmt.Print(\" \")\n\t\t}\n\t}\n\n\tfmt.Println(\" ]\")\n}\n\nfunc main() {\n\tvar n, x int\n\tvar alunos []int\n\tvar servidores []int\n\n\tfmt.Scan(&n)\n\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&x)\n\n\t\tif x%2 != 0 {\n\t\t\talunos = append(alunos, x)\n\t\t} else {\n\t\t\tservidores = append(servidores, x)\n\t\t}\n\t}\n\n\timprimir(alunos)\n\timprimir(servidores)\n}\n",
+            "lines": "37"
+        }
+    ]
+}
